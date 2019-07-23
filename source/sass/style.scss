@@ -1,1 +1,72 @@
+@import "variables.scss";
+@import "normalize.scss";
 @import "common.scss";
+
+@import "blocks/page-header/page-header.scss";
+@import "blocks/page-header/page-header__inner.scss";
+@import "blocks/page-header/page-header__toggle.scss";
+
+@import "blocks/site-nav/site-nav.scss";
+@import "blocks/site-nav/site-nav__item.scss";
+
+@import "blocks/intro-presentation/intro-presentation__container.scss";
+@import "blocks/intro-presentation/intro-presentation__title.scss";
+@import "blocks/intro-presentation/intro-presentation__lead.scss";
+@import "blocks/intro-presentation/intro-presentation__link.scss";
+
+@import "blocks/diet-program/diet-program.scss";
+
+@import "blocks/diet-list/diet-list.scss";
+@import "blocks/diet-list/diet-list__item.scss";
+@import "blocks/diet-list/diet-list__item-title.scss";
+@import "blocks/diet-list/diet-list__item-text.scss";
+
+@import "blocks/diet-link/diet-link.scss";
+@import "blocks/diet-link/diet-link__arrow.scss";
+
+@import "blocks/advantages/advantages.scss";
+@import "blocks/advantages/advantages__title.scss";
+
+
+@import "blocks/advantages-list/advantages-list.scss";
+@import "blocks/advantages-list/advantages-list__item.scss";
+@import "blocks/advantages-list/advantages-list__item-text.scss";
+
+@import "blocks/life-example/life-example.scss";
+@import "blocks/life-example/life-example__title.scss";
+@import "blocks/life-example/life-example__text.scss";
+@import "blocks/life-example/life-example__cost-text.scss";
+
+
+@import "blocks/stats-list/stats-list.scss";
+@import "blocks/stats-list/stats-list__item.scss";
+@import "blocks/stats-list/stats-list__value.scss";
+@import "blocks/stats-list/stats-list__tip.scss";
+
+@import "blocks/transformation/transformation.scss";
+@import "blocks/transformation/transformation__list.scss";
+@import "blocks/transformation/transformation__item.scss";
+
+@import "blocks/range/range.scss";
+@import "blocks/range/range__scale.scss";
+@import "blocks/range/range__bar.scss";
+@import "blocks/range/range__button.scss";
+
+@import "blocks/page-footer/page-footer.scss";
+@import "blocks/page-footer/page-footer__container.scss";
+@import "blocks/page-footer/page-footer__inner.scss";
+@import "blocks/page-footer/page-footer__logo-link.scss";
+
+
+@import "blocks/for-dealers/for-dealers.scss";
+@import "blocks/for-dealers/for-dealers__link.scss";
+
+@import "blocks/company-address/company-address__text.scss";
+
+@import "blocks/social/social.scss";
+@import "blocks/social/social__list.scss";
+@import "blocks/social/social__item.scss";
+@import "blocks/social/social__link.scss";
+
+@import "blocks/copyright/copyright__link.scss";
+@import "blocks/copyright/copyright__link-text.scss";
