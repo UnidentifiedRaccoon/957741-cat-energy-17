@@ -1,19 +1,19 @@
-@font-face{
-font-family: "Oswald";
-src:
-     url("../fonts/oswaldregular.woff2") format("woff2"),
-     url("../fonts/oswaldregular.woff") format("woff");
-font-style: normal;
-font-weight: 400;
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
 }
 
-@font-face{
-font-family: "Oswald";
-src:
-     url("../fonts/oswaldmedium.woff2") format("woff2"),
-     url("../fonts/oswaldmedium.woff") format("woff");
-font-style: normal;
-font-weight: 500;
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
 }
 
 body {
@@ -45,7 +45,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  -webkit-clip-path: inset(100%);
+  // -webkit-clip-path: inset(100%); почему на него ругается линтер
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -60,7 +60,7 @@ input[type="radio"].visually-hidden {
   padding: 0 20px;
 }
 
-.title-basis{
+.title-basis {
   margin: 0;
   font: {
     family: $main-font, "Arial", sans-serif;
@@ -76,7 +76,7 @@ input[type="radio"].visually-hidden {
 }
 
 .section-title {
-    text-align: left;
+  text-align: left;
 }
 
 .text-basis {
@@ -87,14 +87,14 @@ input[type="radio"].visually-hidden {
 }
 
 .link-btn {
- display: block;
- width: 100%;
- font-family: $main-font, "Arial", sans-serif;
- font-size: 14px;
- line-height: 18px;
- text-align: center;
- color: #ffffff;
- background-color: $common-color-one;
+  display: block;
+  width: 100%;
+  font-family: $main-font, "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  background-color: $common-color-one;
 }
 
 .map-block {
