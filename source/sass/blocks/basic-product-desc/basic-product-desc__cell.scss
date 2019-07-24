@@ -1,0 +1,14 @@
+.basic-product-desc__cell {
+  padding: 0;
+  padding-bottom: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  &--field {
+    text-align: left;
+    font-weight: 400;
+  }
+  &--value {
+    text-align: right;
+  }
+}

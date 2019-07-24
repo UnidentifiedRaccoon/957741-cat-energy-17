@@ -4,4 +4,9 @@
     padding-bottom: 23px;
     background-color: #ffffff;
   }
+  &--color {
+    &--grey {
+      background-color: $common-color-two;
+    }
+  }
 }

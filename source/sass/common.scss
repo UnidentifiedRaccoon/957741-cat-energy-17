@@ -71,12 +71,13 @@ input[type="radio"].visually-hidden {
   color: #111111;
 }
 
-.page-title {
+.main-page-title {
   text-align: center;
 }
 
-.section-title {
-  text-align: left;
+.inner-page-title {
+  padding-top: 29px;
+  padding-bottom: 40px;
 }
 
 .text-basis {
@@ -88,11 +89,14 @@ input[type="radio"].visually-hidden {
 
 .link-btn {
   display: block;
+  padding-top: 10px;
+  padding-bottom: 11px;
   width: 100%;
   font-family: $main-font, "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: $common-color-one;
 }

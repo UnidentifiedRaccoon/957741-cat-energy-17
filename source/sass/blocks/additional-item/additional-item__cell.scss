@@ -1,0 +1,12 @@
+.additional-item__cell {
+  padding: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  &--left {
+    text-align: left;
+  }
+  &--right {
+    text-align: right;
+  }
+}

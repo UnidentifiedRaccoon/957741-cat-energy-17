@@ -67,3 +67,45 @@
 //
 @import "blocks/copyright/copyright__link.scss";
 @import "blocks/copyright/copyright__link-text.scss";
+//
+//
+@import "blocks/basic-list/basic-list.scss";
+@import "blocks/basic-list/basic-list__item.scss";
+//
+@import "blocks/basic-product/basic-product.scss";
+@import "blocks/basic-product/basic-product__image-link.scss";
+@import "blocks/basic-product/basic-product__link.scss";
+//
+@import "blocks/basic-product-desc/basic-product-desc.scss";
+@import "blocks/basic-product-desc/basic-product-desc__title.scss";
+@import "blocks/basic-product-desc/basic-product-desc__title-link.scss";
+@import "blocks/basic-product-desc/basic-product-desc__list.scss";
+@import "blocks/basic-product-desc/basic-product-desc__cell.scss";
+//
+@import "blocks/show-goods/show-goods.scss";
+@import "blocks/show-goods/show-goods__button-add.scss";
+@import "blocks/show-goods/show-goods__main-text.scss";
+@import "blocks/show-goods/show-goods__text.scss";
+@import "blocks/show-goods/show-goods__link-show-all.scss";
+//
+@import "blocks/additional-goods/additional-goods.scss";
+@import "blocks/additional-goods/additional-goods__subtitle-box.scss";
+@import "blocks/additional-goods/additional-goods__special-offer.scss";
+//
+@import "blocks/subtitle-box/subtitle-box.scss";
+@import "blocks/subtitle-box/subtitle-box__title.scss";
+@import "blocks/subtitle-box/subtitle-box__decoration-line.scss";
+//
+@import "blocks/additional-list/additional-list.scss";
+// Пришлось вынести от основного блока из зи переопределения
+@import "blocks/additional-goods/additional-goods__list.scss";
+//
+@import "blocks/additional-item/additional-item.scss";
+@import "blocks/additional-item/additional-item__title.scss";
+@import "blocks/additional-item/additional-item__list.scss";
+@import "blocks/additional-item/additional-item__cell.scss";
+@import "blocks/additional-item/additional-item__link.scss";
+//
+@import "blocks/special-offer/special-offer.scss";
+@import "blocks/special-offer/special-offer__icon.scss";
+@import "blocks/special-offer/special-offer__text.scss";
