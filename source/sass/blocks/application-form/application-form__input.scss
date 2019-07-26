@@ -1,0 +1,9 @@
+.application-form__input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 45px;
+  padding-left: 16px;
+  font: inherit;
+  text-transform: uppercase;
+  border: solid 1px $separating-line-color-light;
+}

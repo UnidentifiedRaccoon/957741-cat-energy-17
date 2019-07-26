@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
+
 <body class="form-page">
 
 
@@ -44,85 +45,99 @@
         <h1 class="title-basis  page-title">Подбор программы</h1>
       </div>
     </div>
-<!-- Блок заявки -->
+    <!-- Блок заявки -->
     <section class="application">
       <div class="container  application__container">
         <div class="inner  application__inner">
-        <h2 class="visually-hidden">Форма для отправки заявки</h2>
-        <p class="application__help-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      </div>
+          <h2 class="visually-hidden">Форма для отправки заявки</h2>
+          <p class="application__help-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
         <!-- Форма заявки -->
         <form class="application-form  application__form" action="https://echo.htmlacademy.ru" method="post">
           <!-- Раздел с данными кота -->
-          <fieldset class="application-form__fieldset  application-form__fieldset--cat">
-            <legend сlass="visually-hidden">Параметры кота</legend>
-            <p class="application-form__unit">
-              <label class="application-form__label">
-                Имя:*
-                <input class="application-form__input" type="text" name="cat-name" placeholder="Барсик">
-              </label>
-            </p>
-            <p class="application-form__unit">
-              <label class="application-form__label">
-                Вес (кг):*
-                <input class="application-form__input" type="text" name="cat-wight" placeholder="7">
-              </label>
-            </p>
-            <p class="application-form__unit">
-              <label class="application-form__label">
-                Возраст (лет):
-                <input class="application-form__input" type="text" name="cat-age" placeholder="7">
-              </label>
-            </p>
+          <fieldset class="application-form__fieldset  application-form__fieldset--cat" aria-labelledby="fielset-1-title">
+            <legend></legend>
+            <div class="subtitle-box  application-form__fieldset  visually-hidden">
+              <h3 class="subtitle-box__title" id="fildset-1-title">Характеристики кота</h3>
+              <span class="subtitle-box__decoration-line"></span>
+            </div>
+            <ul class="application-form__list  input">
+              <li class="application-form__item">
+                <label class="application-form__label" for="pet-name">Имя:*</label>
+                <input class="application-form__input" type="text" name="cat-name" placeholder="Барсик" id="pet-name">
+              </li>
+              <li class="application-form__item">
+                <label class="application-form__label" for="pet-weight">Вес (кг):*</label>
+                <input class="application-form__input" type="text" name="cat-wight" placeholder="7" id="pet-weight">
+              </li>
+              <li class="application-form__item">
+                <label class="application-form__label" for="pet-age">Возраст (лет):</label>
+                <input class="application-form__input" type="text" name="cat-age" placeholder="7" id="pet-age">
+              </li>
+            </ul>
           </fieldset>
           <!-- Раздел выбора программы -->
-          <fieldset class="application-form__fieldset  application-form__fieldset--cat">
-            <legend сlass="visually-hidden">Тип программы</legend>
-            <ul class="application-form__list">
+          <fieldset class="application-form__fieldset  application-form__fieldset--cat" aria-label="fielset-2-title">
+            <legend></legend>
+            <div class="subtitle-box  application-form__fieldset  visually-hidden">
+              <h3 class="subtitle-box__title" id="fieldset-2-title">Тип программы</h3>
+              <span class="subtitle-box__decoration-line"></span>
+            </div>
+            <ul class="application-form__list  inner">
               <li class="application-form__item">
+                <input class="application-form__radio" type="radio" name="type-of-program" value="slim">
                 <label class="application-form__label">
-                  <input class="application-form__radio" type="radio" name="type-of-program" value="slim">
                   Похудение
                 </label>
               </li>
               <li class="application-form__item">
+                <input class="application-form__radio" type="radio" name="type-of-program" value="pro">
                 <label class="application-form__label">
-                  <input class="application-form__radio" type="radio" name="type-of-program" value="pro">
                   Набор массы
                 </label>
               </li>
               <li class="application-form__item">
+                <input class="application-form__radio" type="radio" name="type-of-program" value="need-advice">
                 <label class="application-form__label">
-                  <input class="application-form__radio" type="radio" name="type-of-program" value="need-advice">
                   Не знаю (Нужен ваш совет)
                 </label>
               </li>
             </ul>
           </fieldset>
           <!-- Раздел с контактными данными владельца -->
-          <fieldset class="application-form__fieldset  application-form__fieldset--person">
-            <legend сlass="application-form__legend  subtitle-basis">Контактные данные (владельца кота)</legend>
-            <p class="application-form__unit">
-              <label class="application-form__label">
-                E-mail:*
-                <input class="application-form__input  application-form__input--email" type="email" name="person-email" placeholder="kuklachev@gmail.com">
-              </label>
-            </p>
-            <p class="application-form__unit">
-              <label class="application-form__label">
-                Телефон:*
-                <input class="application-form__input  application-form__input--tel" type="tel" name="person-tel" placeholder="8 (960) 900-60-90">
-              </label>
-            </p>
-            <!-- Раздел с сообщением владельца -->
+          <fieldset class="application-form__fieldset  application-form__fieldset--person" aria-labelledby="fieldset-3-title">
+            <legend></legend>
+            <div class="subtitle-box  application-form__subtitle-box">
+              <h3 class="subtitle-box__title" id="fieldset-3-title">Контактные данные (владельца кота)</h3>
+              <span class="subtitle-box__decoration-line"></span>
+            </div>
+            <ul class="application-form__list  inner">
+            <li class="application-form__item">
+              <label class="application-form__label" for="person-email">E-mail:*</label>
+              <input class="application-form__input  application-form__input--email" type="email" name="person-email" placeholder="kuklachev@gmail.com" id="person-email">
+            </li>
+            <li class="application-form__item">
+              <label class="application-form__label" for="person-tel">Телефон:*</label>
+              <input class="application-form__input  application-form__input--tel" type="tel" name="person-tel" placeholder="8 (960) 900-60-90" id="person-tel">
+            </li>
+          </ul>
           </fieldset>
-          <fieldset class="application-form__fieldset  application-form__fieldset--person">
-            <legend сlass="application-form__legend">Комментарий</legend>
-            <textarea class="application-form__message" name="person-massage" rows="8" cols="80">Расскажите обо всех повадках кота</textarea>
+          <!-- Раздел с сообщением владельца -->
+          <fieldset class="application-form__fieldset  application-form__fieldset--person" aria-labelledby="fielset-4-title">
+            <legend></legend>
+            <div class="subtitle-box  application-form__subtitle-box">
+              <h3 class="subtitle-box__title" id="fieldset-4-title">Комментарий</h3>
+              <span class="subtitle-box__decoration-line"></span>
+            </div>
+            <textarea class="application-form__message" name="person-massage" rows="8" cols="35">Расскажите обо всех повадках кота</textarea>
           </fieldset>
           <!-- Раздел с выборои дополнительных товаров -->
-          <fieldset class="application-form__fieldset  application-form__fieldset--cat">
-            <legend сlass="application-form__legend">Дополнительно</legend>
+          <fieldset class="application-form__fieldset  application-form__fieldset--cat" aria-labelledby="fieldset-5-title">
+            <legend></legend>
+            <div class="subtitle-box  application-form__subtitle-box">
+              <h3 class="subtitle-box__title" id="fieldset-5-title">Дополнительно</h3>
+              <span class="subtitle-box__decoration-line"></span>
+            </div>
             <ul class="application-form__list">
               <li class="application-form__item">
                 <label class="application-form__label">
@@ -227,5 +242,6 @@
     <footer>
 
 
-  </body>
-  </html>
+</body>
+
+</html>
