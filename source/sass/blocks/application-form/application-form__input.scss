@@ -6,4 +6,13 @@
   font: inherit;
   text-transform: uppercase;
   border: solid 1px $separating-line-color-light;
+  &::placeholder {
+    color: #444444; //Для современных браузеров
+  }
+  &:-moz-placeholder {
+    color: #444444; //Для Firefox с версии 4 и до 19
+  }
+  &::-moz-placeholder {
+    color: #444444; //Для Firefox до версии 51
+  }
 }

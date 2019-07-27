@@ -111,14 +111,21 @@
 @import "blocks/special-offer/special-offer__text.scss";
 //
 //
+@import "blocks/application/application.scss";
+@import "blocks/application/application__inner.scss";
 @import "blocks/application/application__help-text.scss";
+@import "blocks/application/application__small-info.scss";
 //
+@import "blocks/application-form/application-form.scss";
 @import "blocks/application-form/application-form__fieldset.scss";
-@import "blocks/application-form/application-form__label.scss";
+@import "blocks/application-form/application-form__subtitle-box.scss";
 @import "blocks/application-form/application-form__list.scss";
-@import "blocks/application-form/application-form__input.scss";
 @import "blocks/application-form/application-form__item.scss";
+@import "blocks/application-form/application-form__label.scss";
+@import "blocks/application-form/application-form__input.scss";
+@import "blocks/application-form/application-form__message-box.scss";
 @import "blocks/application-form/application-form__message.scss";
+@import "blocks/application-form/application-form__submit-button.scss";
 //
 //
 @import "blocks/styles-for-pages/catalog-page__page-title-container.scss";

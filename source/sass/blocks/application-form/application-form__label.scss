@@ -4,4 +4,64 @@
   font: inherit;
   color: #222222;
   text-transform: uppercase;
+  &--for {
+    &--radio {
+      position: relative;
+      margin: 0;
+      padding-left: 46px;
+      padding-top: 8px;
+      padding-bottom: 5px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        border: 1px solid $separating-line-color-light;
+        border-radius: 50%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 12px;
+        height: 12px;
+        background-color: $common-color-one;
+        border-radius: 50%;
+      }
+    }
+    &--checkbox {
+      position: relative;
+      margin: 0;
+      padding-left: 46px;
+      padding-top: 6px;
+      padding-bottom: 5px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        border: 1px solid $separating-line-color-light;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 11px;
+        box-sizing: border-box;
+        width: 10px;
+        height: 20px;
+        border: 1px solid $common-color-one;
+        transform: rotate(43deg);
+        border-top: none;
+        border-left: none;
+      }
+    }
+  }
 }

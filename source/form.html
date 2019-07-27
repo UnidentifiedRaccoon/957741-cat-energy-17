@@ -55,121 +55,119 @@
         <!-- Форма заявки -->
         <form class="application-form  application__form" action="https://echo.htmlacademy.ru" method="post">
           <!-- Раздел с данными кота -->
-          <fieldset class="application-form__fieldset  application-form__fieldset--cat" aria-labelledby="fielset-1-title">
+          <fieldset class="application-form__fieldset  application-form__fieldset--pet--characteristics" aria-labelledby="fielset-1-title">
             <legend></legend>
             <div class="subtitle-box  application-form__fieldset  visually-hidden">
               <h3 class="subtitle-box__title" id="fildset-1-title">Характеристики кота</h3>
               <span class="subtitle-box__decoration-line"></span>
             </div>
-            <ul class="application-form__list  input">
-              <li class="application-form__item">
+            <ul class="application-form__list  inner" role="presentation none">
+              <li class="application-form__item  application-form__item--text">
                 <label class="application-form__label" for="pet-name">Имя:*</label>
                 <input class="application-form__input" type="text" name="cat-name" placeholder="Барсик" id="pet-name">
               </li>
-              <li class="application-form__item">
+              <li class="application-form__item  application-form__item--text">
                 <label class="application-form__label" for="pet-weight">Вес (кг):*</label>
                 <input class="application-form__input" type="text" name="cat-wight" placeholder="7" id="pet-weight">
               </li>
-              <li class="application-form__item">
+              <li class="application-form__item  application-form__item--text">
                 <label class="application-form__label" for="pet-age">Возраст (лет):</label>
                 <input class="application-form__input" type="text" name="cat-age" placeholder="7" id="pet-age">
               </li>
             </ul>
           </fieldset>
           <!-- Раздел выбора программы -->
-          <fieldset class="application-form__fieldset  application-form__fieldset--cat" aria-label="fielset-2-title">
+          <fieldset class="application-form__fieldset  application-form__fieldset--pet--diet  application-form__fieldset--full-border" aria-label="fielset-2-title">
             <legend></legend>
             <div class="subtitle-box  application-form__fieldset  visually-hidden">
               <h3 class="subtitle-box__title" id="fieldset-2-title">Тип программы</h3>
               <span class="subtitle-box__decoration-line"></span>
             </div>
             <ul class="application-form__list  inner">
-              <li class="application-form__item">
-                <input class="application-form__radio" type="radio" name="type-of-program" value="slim">
-                <label class="application-form__label">
-                  Похудение
+              <li class="application-form__item  application-form__item--radio">
+                <input class="application-form__radio  visually-hidden" type="radio" name="type-of-program" value="slim">
+                <label class="application-form__label  application-form__label--for--radio">
+                Похудение
                 </label>
               </li>
-              <li class="application-form__item">
-                <input class="application-form__radio" type="radio" name="type-of-program" value="pro">
-                <label class="application-form__label">
+              <li class="application-form__item  application-form__item--radio">
+                <input class="application-form__radio  visually-hidden" type="radio" name="type-of-program" value="pro">
+                <label class="application-form__label  application-form__label--for--radio">
                   Набор массы
                 </label>
               </li>
-              <li class="application-form__item">
-                <input class="application-form__radio" type="radio" name="type-of-program" value="need-advice">
-                <label class="application-form__label">
+              <li class="application-form__item  application-form__item--radio">
+                <input class="application-form__radio  visually-hidden" type="radio" name="type-of-program" value="need-advice">
+                <label class="application-form__label  application-form__label--for--radio">
                   Не знаю (Нужен ваш совет)
                 </label>
               </li>
             </ul>
           </fieldset>
           <!-- Раздел с контактными данными владельца -->
-          <fieldset class="application-form__fieldset  application-form__fieldset--person" aria-labelledby="fieldset-3-title">
+          <fieldset class="application-form__fieldset  application-form__fieldset--person--contacts" aria-labelledby="fieldset-3-title">
             <legend></legend>
             <div class="subtitle-box  application-form__subtitle-box">
               <h3 class="subtitle-box__title" id="fieldset-3-title">Контактные данные (владельца кота)</h3>
               <span class="subtitle-box__decoration-line"></span>
             </div>
-            <ul class="application-form__list  inner">
-            <li class="application-form__item">
+            <ul class="application-form__list  inner" role="presentation none">
+            <li class="application-form__item  application-form__item--text">
               <label class="application-form__label" for="person-email">E-mail:*</label>
               <input class="application-form__input  application-form__input--email" type="email" name="person-email" placeholder="kuklachev@gmail.com" id="person-email">
             </li>
-            <li class="application-form__item">
+            <li class="application-form__item  application-form__item--text">
               <label class="application-form__label" for="person-tel">Телефон:*</label>
               <input class="application-form__input  application-form__input--tel" type="tel" name="person-tel" placeholder="8 (960) 900-60-90" id="person-tel">
             </li>
           </ul>
           </fieldset>
           <!-- Раздел с сообщением владельца -->
-          <fieldset class="application-form__fieldset  application-form__fieldset--person" aria-labelledby="fielset-4-title">
+          <fieldset class="application-form__fieldset  application-form__fieldset--person--message" aria-labelledby="fielset-4-title">
             <legend></legend>
             <div class="subtitle-box  application-form__subtitle-box">
               <h3 class="subtitle-box__title" id="fieldset-4-title">Комментарий</h3>
               <span class="subtitle-box__decoration-line"></span>
             </div>
+            <div class="inner">
             <textarea class="application-form__message" name="person-massage" rows="8" cols="35">Расскажите обо всех повадках кота</textarea>
+          </div>
           </fieldset>
           <!-- Раздел с выборои дополнительных товаров -->
-          <fieldset class="application-form__fieldset  application-form__fieldset--cat" aria-labelledby="fieldset-5-title">
+          <fieldset class="application-form__fieldset  application-form__fieldset--pet--additional" aria-labelledby="fieldset-5-title">
             <legend></legend>
             <div class="subtitle-box  application-form__subtitle-box">
               <h3 class="subtitle-box__title" id="fieldset-5-title">Дополнительно</h3>
               <span class="subtitle-box__decoration-line"></span>
             </div>
-            <ul class="application-form__list">
-              <li class="application-form__item">
-                <label class="application-form__label">
-                  <input class="application-form__checkbox" type="checkbox" name="sweetener" checked>
-                  Сахарозаменитель
-                </label>
+            <ul class="application-form__list  inner">
+              <li class="application-form__item  application-form__item--checkbox">
+                <input class="application-form__checkbox  visually-hidden" type="checkbox" name="sweetener" checked>
+                <label class="application-form__label  application-form__label--for--checkbox">Сахарозаменитель</label>
               </li>
-              <li class="application-form__item">
-                <label class="application-form__label">
-                  <input class="application-form__checkbox" type="checkbox" name="fresh water">
-                  Питьевая вода
-                </label>
+              <li class="application-form__item  application-form__item--checkbox">
+                <input class="application-form__checkbox  visually-hidden" type="checkbox" name="fresh water">
+                <label class="application-form__label  application-form__label--for--checkbox">Питьевая вода</label>
               </li>
-              <li class="application-form__item">
-                <label class="application-form__label">
-                  <input class="application-form__checkbox" type="checkbox" name="milk">
-                  Молоко
-                </label>
+              <li class="application-form__item  application-form__item--checkbox">
+                <input class="application-form__checkbox  visually-hidden" type="checkbox" name="milk">
+                <label class="application-form__label  application-form__label--for--checkbox">Молоко</label>
               </li>
-              <li class="application-form__item">
-                <label class="application-form__label">
-                  <input class="application-form__checkbox" type="checkbox" name="vitamins">
-                  Витамины
-                </label>
+              <li class="application-form__item  application-form__item--checkbox">
+                <input class="application-form__checkbox  visually-hidden" type="checkbox" name="vitamins">
+                <label class="application-form__label  application-form__label--for--checkbox">Витамины</label>
               </li>
             </ul>
           </fieldset>
+          <div class="inner">
           <button class="link-btn application-form__submit-button" type="submit" name="submit-button">Отправить заявку</button>
+        </div>
         </form>
+        <div class="inner  application__inner  application__inner--small-box">
         <small class="application__small-info">
           * — Обязательные поля
         </small>
+      </div>
       </div>
     </section>
   </main>
