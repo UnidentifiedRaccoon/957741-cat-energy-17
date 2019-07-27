@@ -4,6 +4,7 @@
   font: inherit;
   color: #222222;
   text-transform: uppercase;
+
   &--for {
     &--radio {
       position: relative;
@@ -11,6 +12,7 @@
       padding-left: 46px;
       padding-top: 8px;
       padding-bottom: 5px;
+
       &::before {
         content: "";
         position: absolute;
@@ -22,6 +24,7 @@
         border: 1px solid $separating-line-color-light;
         border-radius: 50%;
       }
+
       &::after {
         content: "";
         position: absolute;
@@ -33,12 +36,14 @@
         border-radius: 50%;
       }
     }
+
     &--checkbox {
       position: relative;
       margin: 0;
       padding-left: 46px;
       padding-top: 6px;
       padding-bottom: 5px;
+
       &::before {
         content: "";
         position: absolute;
@@ -49,6 +54,7 @@
         height: 30px;
         border: 1px solid $separating-line-color-light;
       }
+
       &::after {
         content: "";
         position: absolute;

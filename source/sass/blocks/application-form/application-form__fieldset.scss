@@ -2,19 +2,23 @@
   margin: 0;
   padding: 0;
   border: none;
+
   &--pet {
     &--diet {
       border: 1px solid $separating-line-color-light;
     }
+
     &--additional {
       padding-top: 24px;
       padding-bottom: 13px;
     }
   }
+
   &--person {
     &--contacts {
       padding-top: 27px;
     }
+
     &--message {
       padding-top: 6px;
     }

@@ -2,6 +2,7 @@
   position: relative;
   margin-bottom: 20px;
   padding: 1px 1px 6px 80px;
+
   &::before {
     content: "";
     position: absolute;
@@ -11,6 +12,7 @@
     height: 60px;
     background-color: $common-color-one;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -21,15 +23,19 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
   &--healthy::after {
     background-image: url("/img/advantage-leaf@1x.png");
   }
+
   &--quickly::after {
     background-image: url("/img/advantage-powder@1x.png");
   }
+
   &--nourishingly::after {
     background-image: url("/img/advantage-dining@1x.png");
   }
+
   &--result::after {
     background-image: url("/img/advantage-clock@1x.png");
   }

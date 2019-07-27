@@ -3,9 +3,11 @@
   margin: 0 auto 20px auto;
   background-color: transparent;
   border: none;
+
   &--plus {
     width: 35px;
     height: 35px;
+
     &::before {
       content: "";
       position: absolute;
@@ -15,6 +17,7 @@
       height: 2px;
       background-color: rgba(34, 34, 34, 0.2);
     }
+
     &::after {
       content: "";
       position: absolute;
