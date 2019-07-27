@@ -11,32 +11,23 @@
     width: 60px;
     height: 60px;
     background-color: $common-color-one;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 6px;
-    width: 60px;
-    height: 60px;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 4px 6px;
   }
 
-  &--healthy::after {
+  &--healthy::before {
     background-image: url("/img/advantage-leaf@1x.png");
   }
 
-  &--quickly::after {
+  &--quickly::before {
     background-image: url("/img/advantage-powder@1x.png");
   }
 
-  &--nourishingly::after {
+  &--nourishingly::before {
     background-image: url("/img/advantage-dining@1x.png");
   }
 
-  &--result::after {
+  &--result::before {
     background-image: url("/img/advantage-clock@1x.png");
   }
 }

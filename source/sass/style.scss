@@ -2,7 +2,6 @@
 @import "normalize.scss";
 @import "common.scss";
 //
-@import "blocks/page-header/page-header.scss";
 @import "blocks/page-header/page-header__inner.scss";
 @import "blocks/page-header/page-header__toggle.scss";
 //
@@ -12,7 +11,6 @@
 @import "blocks/intro-presentation/intro-presentation__container.scss";
 @import "blocks/intro-presentation/intro-presentation__title.scss";
 @import "blocks/intro-presentation/intro-presentation__lead.scss";
-@import "blocks/intro-presentation/intro-presentation__link.scss";
 //
 @import "blocks/diet-program/diet-program.scss";
 //
@@ -41,7 +39,6 @@
 @import "blocks/stats-list/stats-list__value.scss";
 @import "blocks/stats-list/stats-list__tip.scss";
 //
-@import "blocks/transformation/transformation.scss";
 @import "blocks/transformation/transformation__list.scss";
 @import "blocks/transformation/transformation__item.scss";
 //
@@ -60,7 +57,6 @@
 //
 @import "blocks/company-address/company-address__text.scss";
 //
-@import "blocks/social/social.scss";
 @import "blocks/social/social__list.scss";
 @import "blocks/social/social__item.scss";
 @import "blocks/social/social__link.scss";
@@ -78,7 +74,6 @@
 //
 @import "blocks/basic-product-desc/basic-product-desc.scss";
 @import "blocks/basic-product-desc/basic-product-desc__title.scss";
-@import "blocks/basic-product-desc/basic-product-desc__title-link.scss";
 @import "blocks/basic-product-desc/basic-product-desc__list.scss";
 @import "blocks/basic-product-desc/basic-product-desc__cell.scss";
 //
@@ -107,7 +102,7 @@
 @import "blocks/additional-item/additional-item__link.scss";
 //
 @import "blocks/special-offer/special-offer.scss";
-@import "blocks/special-offer/special-offer__icon.scss";
+// @import "blocks/special-offer/special-offer__icon.scss"
 @import "blocks/special-offer/special-offer__text.scss";
 //
 //
@@ -116,14 +111,12 @@
 @import "blocks/application/application__help-text.scss";
 @import "blocks/application/application__small-info.scss";
 //
-@import "blocks/application-form/application-form.scss";
 @import "blocks/application-form/application-form__fieldset.scss";
 @import "blocks/application-form/application-form__subtitle-box.scss";
 @import "blocks/application-form/application-form__list.scss";
 @import "blocks/application-form/application-form__item.scss";
 @import "blocks/application-form/application-form__label.scss";
 @import "blocks/application-form/application-form__input.scss";
-@import "blocks/application-form/application-form__message-box.scss";
 @import "blocks/application-form/application-form__message.scss";
 @import "blocks/application-form/application-form__submit-button.scss";
 //
