@@ -1,0 +1,38 @@
+.application-form__input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 45px;
+  padding-left: 16px;
+  padding-right: 15px;
+  font: inherit;
+  text-transform: uppercase;
+  border: solid 1px $separating-line-color-light;
+
+  &::placeholder {
+    color: #444444; //Для современных браузеров
+  }
+
+  &:-moz-placeholder {
+    color: #444444; //Для Firefox с версии 4 и до 19
+  }
+
+  &::-moz-placeholder {
+    color: #444444; //Для Firefox до версии 51
+  }
+
+  &--email {
+    padding-right: 35px;
+    background-image: url("/img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: (93%) center;
+    background-size: 18px 14px;
+  }
+
+  &--tel {
+    padding-right: 35px;
+    background-image: url("/img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: (93%) center;
+    background-size: 21px 21px;
+  }
+}

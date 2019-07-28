@@ -1,0 +1,33 @@
+.advantages-list__item {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 1px 1px 6px 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $common-color-one;
+    background-repeat: no-repeat;
+    background-position: 4px 6px;
+  }
+
+  &--healthy::before {
+    background-image: url("/img/advantage-leaf@1x.png");
+  }
+
+  &--quickly::before {
+    background-image: url("/img/advantage-powder@1x.png");
+  }
+
+  &--nourishingly::before {
+    background-image: url("/img/advantage-dining@1x.png");
+  }
+
+  &--result::before {
+    background-image: url("/img/advantage-clock@1x.png");
+  }
+}

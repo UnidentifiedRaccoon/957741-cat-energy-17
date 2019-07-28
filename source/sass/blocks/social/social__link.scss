@@ -1,0 +1,23 @@
+.social__link {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+
+  &--vk {
+    margin-top: 5px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &--insta {
+    margin-top: 4px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &--fb {
+    margin-top: 2px;
+    width: 24px;
+    height: 24px;
+  }
+}

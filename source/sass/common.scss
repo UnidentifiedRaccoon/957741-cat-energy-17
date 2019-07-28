@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  // -webkit-clip-path: inset(100%); почему на него ругается линтер
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 280px;
+  padding: 0 20px;
+}
+
+.title-basis {
+  margin: 0;
+  font: {
+    family: $main-font, "Arial", sans-serif;
+    size: 36px;
+    weight: 400;
+  }
+  line-height: 36px;
+  color: #111111;
+}
+
+.main-page-title {
+  text-align: center;
+}
+
+.subtitle {
+  display: flex;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 24px;
+  position: relative;
+  font: {
+    family: $main-font, "Arial", sans-serif;
+    size: 24px;
+    weight: 400;
+  }
+  line-height: 24px;
+  color: #111111;
+
+  &::after {
+    content: "";
+    position: relative;
+    right: -24px;
+    top: 12px;
+    flex-grow: 1;
+    min-width: 20px;
+    height: 3px;
+    background-color: $common-color-one;
+  }
+}
+
+.text-basis {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.link-btn {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  width: 100%;
+  font-family: $main-font, "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $common-color-one;
+  border: none;
+}
+
+.map-block {
+  display: block;
+  height: 362px;
+  margin: 0 auto;
+}

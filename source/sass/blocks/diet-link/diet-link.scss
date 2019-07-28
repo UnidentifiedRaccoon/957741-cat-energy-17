@@ -1,0 +1,12 @@
+.diet-link {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 19px;
+  padding-bottom: 22px;
+  font-family: $main-font, "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #111111;
+  text-transform: uppercase;
+  border-top: 1px solid $separating-line-color-dark;
+}

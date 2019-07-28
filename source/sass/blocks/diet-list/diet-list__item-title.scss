@@ -1,0 +1,13 @@
+.diet-list__item-title {
+  margin: 0;
+  margin-bottom: 30px;
+  margin-left: 72px;
+  font: {
+    family: $main-font, "Arial", sans-serif;
+    size: 24px;
+    weight: 400;
+  }
+  line-height: 37px;
+  color: #111111;
+  text-transform: uppercase;
+}

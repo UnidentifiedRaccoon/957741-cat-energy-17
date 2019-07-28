@@ -1,0 +1,41 @@
+.diet-list__item {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 31px 20px 0 20px;
+  background-color: $common-color-two;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: $common-color-one;
+    border-radius: 50%;
+  }
+
+  &--loos::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 31px;
+    width: 35px;
+    height: 50px;
+    background-image: url("/img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--gain::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 14px;
+    width: 67px;
+    height: 28px;
+    background-image: url("/img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}

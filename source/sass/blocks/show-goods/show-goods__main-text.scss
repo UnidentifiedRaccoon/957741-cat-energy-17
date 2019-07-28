@@ -1,0 +1,11 @@
+.show-goods__main-text {
+  margin: 0 auto 8px auto;
+  font: {
+    family: $main-font, "Arial", sans-serif;
+    size: 16px;
+    weight: 400;
+  }
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}

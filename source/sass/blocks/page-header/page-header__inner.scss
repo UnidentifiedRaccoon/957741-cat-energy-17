@@ -1,0 +1,8 @@
+.page-header__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid $separating-line-color-light;
+}

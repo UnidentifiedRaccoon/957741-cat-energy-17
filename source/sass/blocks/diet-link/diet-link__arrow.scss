@@ -1,0 +1,22 @@
+.diet-link__arrow {
+  display: block;
+  position: relative;
+  margin-top: 8px;
+  margin-left: 12px;
+  width: 21px;
+  height: 2px;
+  background-color: #111111;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -1px;
+    width: 0;
+    height: 0;
+    border: 5px solid #111111;
+    border-right: none;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+  }
+}

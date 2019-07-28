@@ -1,0 +1,25 @@
+.diet-list__item-link {
+  display: block;
+  position: relative;
+  padding: 19px 40px 22px 0;
+  font-family: $main-font, "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #111111;
+  text-transform: uppercase;
+  border-top: 1px solid $separating-line-color-dark;
+
+  &::after {
+    content: "icon";
+    color: transparent;
+    position: relative;
+    top: 7px;
+    right: -6px;
+    width: 25px;
+    height: 12px;
+    background-image: url("/img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 25px 12px;
+  }
+}
