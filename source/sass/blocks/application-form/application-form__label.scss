@@ -5,6 +5,14 @@
   color: #222222;
   text-transform: uppercase;
 
+  &--email {
+    margin-right: 10px;
+  }
+
+  &--tel {
+    margin-right: 9px;
+  }
+
   &--for {
     &--radio {
       position: relative;
