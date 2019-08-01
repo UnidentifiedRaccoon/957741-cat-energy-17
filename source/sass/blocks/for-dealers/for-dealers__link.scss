@@ -4,4 +4,9 @@
   line-height: 19px;
   color: #111111;
   text-transform: uppercase;
+  @media (min-width: 768px) {
+    max-width: 180px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }

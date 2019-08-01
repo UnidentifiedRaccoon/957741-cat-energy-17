@@ -1,0 +1,20 @@
+.intro-presentation__inner {
+  display: flex;
+  flex-direction: column;
+  padding-top: 29px;
+  height: 450px;
+  @media (min-width: $tablet-width) {
+    padding-left: 119px;
+    padding-top: 40px;
+    width: auto;
+    height: 790px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-left: 190px;
+    padding-top: 95px;
+    width: auto;
+    height: 475px;
+  }
+}

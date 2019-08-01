@@ -1,16 +1,22 @@
 @import "variables.scss";
 @import "normalize.scss";
+// @import "outline.scss";
 @import "common.scss";
 //
+@import "blocks/page-header/page-header.scss";
+@import "blocks/page-header/page-header__container.scss";
 @import "blocks/page-header/page-header__inner.scss";
 @import "blocks/page-header/page-header__toggle.scss";
 //
 @import "blocks/site-nav/site-nav.scss";
 @import "blocks/site-nav/site-nav__item.scss";
+@import "blocks/site-nav/site-nav__link.scss";
 //
 @import "blocks/intro-presentation/intro-presentation__container.scss";
+@import "blocks/intro-presentation/intro-presentation__inner.scss";
 @import "blocks/intro-presentation/intro-presentation__title.scss";
 @import "blocks/intro-presentation/intro-presentation__lead.scss";
+@import "blocks/intro-presentation/intro-presentation__link.scss";
 //
 @import "blocks/diet-program/diet-program.scss";
 //
@@ -19,9 +25,6 @@
 @import "blocks/diet-list/diet-list__item-title.scss";
 @import "blocks/diet-list/diet-list__item-text.scss";
 @import "blocks/diet-list/diet-list__item-link.scss";
-//
-@import "blocks/diet-link/diet-link.scss";
-@import "blocks/diet-link/diet-link__arrow.scss";
 //
 @import "blocks/advantages/advantages.scss";
 @import "blocks/advantages/advantages__title.scss";
@@ -52,11 +55,14 @@
 @import "blocks/page-footer/page-footer__container.scss";
 @import "blocks/page-footer/page-footer__inner.scss";
 @import "blocks/page-footer/page-footer__logo-link.scss";
+@import "blocks/page-footer/page-footer__social.scss";
 //
 @import "blocks/for-dealers/for-dealers.scss";
 @import "blocks/for-dealers/for-dealers__link.scss";
 //
+@import "blocks/company-address/company-address.scss";
 @import "blocks/company-address/company-address__text.scss";
+@import "blocks/company-address/company-address__town.scss";
 //
 @import "blocks/social/social__list.scss";
 @import "blocks/social/social__item.scss";
@@ -119,3 +125,4 @@
 //
 @import "blocks/styles-for-pages/catalog-page__page-title-container.scss";
 @import "blocks/styles-for-pages/form-page__page-title-container.scss";
+@import "blocks/styles-for-pages/index-page.scss";

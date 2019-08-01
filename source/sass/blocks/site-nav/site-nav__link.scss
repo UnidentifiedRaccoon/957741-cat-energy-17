@@ -1,0 +1,22 @@
+.site-nav__link {
+  display: block;
+  padding-top: 23px;
+  padding-bottom: 22px;
+  color: #111111;
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #222222;
+    &:not([href]) {
+      border-bottom: 2px solid $common-color-one;
+    }
+
+    @media (min-width: $desctop-width) {
+      color: #ffffff;
+      &:not([href]) {
+        border-bottom: 2px solid #ffffff;
+      }
+    }
+  }
+}

@@ -54,11 +54,27 @@ input[type="radio"].visually-hidden {
 .container {
   width: 320px;
   margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+  @media (min-width: $desctop-width) {
+    width: 1440px;
+  }
 }
 
 .inner {
   width: 280px;
   padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    background: rgba(255, 0, 0, 0.2);
+    width: 708px;
+    padding: 0 30px;
+  }
+  @media (min-width: $desctop-width) {
+    background: rgba(0, 255, 0, 0.2);
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .title-basis {
@@ -70,10 +86,17 @@ input[type="radio"].visually-hidden {
   }
   line-height: 36px;
   color: #111111;
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px
+  }
 }
 
 .main-page-title {
   text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .subtitle {
@@ -107,6 +130,10 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .link-btn {
@@ -122,6 +149,13 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: $common-color-one;
   border: none;
+  @media (min-width: 768px) {
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .map-block {

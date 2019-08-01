@@ -10,4 +10,14 @@
   line-height: 37px;
   color: #111111;
   text-transform: uppercase;
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      margin-left: 0;
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin-left: 165px;
+      margin-bottom: 75px
+  }
 }

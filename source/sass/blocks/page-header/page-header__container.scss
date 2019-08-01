@@ -1,0 +1,11 @@
+.page-header__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    box-sizing: border-box;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-right: 110px;
+  }
+}

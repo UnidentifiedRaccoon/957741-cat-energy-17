@@ -1,7 +1,13 @@
 .site-nav__item {
   width: (100%);
-  padding-top: 23px;
-  padding-bottom: 22px;
   text-align: center;
   border-bottom: 1px solid $separating-line-color-light;
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: auto;
+    margin-right: 36px;
+    &:first-child {
+      margin-left: auto;
+    }
+  }
 }

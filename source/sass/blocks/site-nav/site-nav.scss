@@ -8,11 +8,26 @@
     weight: 500;
   }
   line-height: 20px;
-  color: #111111;
   list-style: none;
   text-transform: uppercase;
 
   &--visible {
     display: block;
+  }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-right: -36px;
+    padding-top: 11px;
+    width: 490px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-right: -36px;
+    width: 645px;
+    font-size: 20px;
+    line-height: 25px;
   }
 }

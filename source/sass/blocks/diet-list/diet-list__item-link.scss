@@ -1,5 +1,5 @@
 .diet-list__item-link {
-  display: block;
+  display: inline-block;
   position: relative;
   padding: 19px 40px 22px 0;
   font-family: $main-font, "Arial", sans-serif;
@@ -7,7 +7,6 @@
   line-height: 16px;
   color: #111111;
   text-transform: uppercase;
-  border-top: 1px solid $separating-line-color-dark;
 
   &::after {
     content: "icon";
@@ -21,5 +20,15 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 25px 12px;
+  }
+
+  @media (min-width: 768px) {
+    border: none;
+    font-size: 20px;
+    line-height: 20px;
+    &::after {
+      top: 10px;
+      right: -18px;
+    }
   }
 }
