@@ -2,7 +2,7 @@
   font-family: $main-font, "Arial", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  color: #111111;
+  color: $text-color-dark;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {

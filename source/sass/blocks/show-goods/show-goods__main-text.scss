@@ -6,7 +6,7 @@
     weight: 400;
   }
   line-height: 20px;
-  color: #111111;
+  color: $text-color-dark;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {

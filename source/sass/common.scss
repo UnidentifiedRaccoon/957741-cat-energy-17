@@ -160,7 +160,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $text-color-light;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
