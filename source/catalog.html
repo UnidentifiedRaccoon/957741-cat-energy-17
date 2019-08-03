@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -27,7 +28,7 @@
           <li class="site-nav__item">
             <a class="site-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-nav__item  site-nav__item--active">
+          <li class="site-nav__item    site-nav__item--active">
             <a class="site-nav__link">Каталог продукции</a>
           </li>
           <li class="site-nav__item">
@@ -53,7 +54,7 @@
         <ul class="basic-list  basic-goods__list">
           <!-- Основной товар №1 -->
           <li class="basic-list__item">
-            <article class="basic-product  basic-list__product  inner">
+            <article class="basic-product  basic-list__product">
               <a class="basic-product__image-link" href="#">
                 <img class="basic-product__image" src="img/chicken-small-mobile@1x.jpg" alt="Куриный Cat Energy PRO 500 г" width="140" height="144">
               </a>
@@ -81,7 +82,7 @@
           </li>
           <!-- Основной товар №2 -->
           <li class="basic-list__item">
-            <article class="basic-product  basic-list__product  inner">
+            <article class="basic-product  basic-list__product">
               <a class="basic-product__image-link" href="#">
                 <img class="basic-product__image" src="img/chicken-big-mobile@1x.jpg" alt="Куриный Cat Energy PRO 1000 г" width="140" height="144">
               </a>
@@ -109,7 +110,7 @@
           </li>
           <!-- Основной товар №3 -->
           <li class="basic-list__item">
-            <article class="basic-product  basic-list__product  inner">
+            <article class="basic-product  basic-list__product">
               <a class="basic-product__image-link" href="#">
                 <img class="basic-product__image" src="img/fish-small-mobile@1x.jpg" alt="Рыбный Cat Energy PRO 500 г" width="140" height="144">
               </a>
@@ -137,7 +138,7 @@
           </li>
           <!-- Основной товар №4 -->
           <li class="basic-list__item">
-            <article class="basic-product  basic-list__product  inner">
+            <article class="basic-product  basic-list__product">
               <a class="basic-product__image-link" href="#">
                 <img class="basic-product__image" src="img/fish-big-mobile@1x.jpg" alt="Рыбный Cat Energy PRO 1000 г" width="140" height="144">
               </a>
@@ -165,7 +166,7 @@
           </li>
           <!-- Основной товар №5 -->
           <li class="basic-list__item">
-            <article class="basic-product  basic-list__product  inner">
+            <article class="basic-product  basic-list__product">
               <a class="basic-product__image-link" href="#">
                 <img class="basic-product__image" src="img/buckwheat-small-mobile@1x.jpg" alt="Гречневый Cat Energy Slim 500 г" width="140" height="144">
               </a>
@@ -193,7 +194,7 @@
           </li>
           <!-- Основной товар №6 -->
           <li class="basic-list__item">
-            <article class="basic-product  basic-list__product  inner">
+            <article class="basic-product  basic-list__product">
               <a class="basic-product__image-link" href="#">
                 <img class="basic-product__image" src="img/buckwheat-big-mobile@1x.jpg" alt="Гречневый Cat Energy Slim 1000 г" width="140" height="144">
               </a>
@@ -221,7 +222,7 @@
           </li>
           <!-- Основной товар №7 -->
           <li class="basic-list__item">
-            <article class="basic-product  basic-list__product  inner">
+            <article class="basic-product  basic-list__product">
               <a class="basic-product__image-link" href="#">
                 <img class="basic-product__image" src="img/rice-small-mobile@1x.jpg" alt="Рисовый Cat Energy Slim 500 г" width="140" height="144">
               </a>
@@ -247,17 +248,17 @@
               <a class="link-btn  basic-product__link" href="#">Заказать</a>
             </article>
           </li>
+          <li class="show-goods  basic-goods__show-goods">
+            <button class="show-goods__button-add  show-goods__button-add--plus" type="button" name="add-basic-goods">
+              <span class="visually-hidden">Показать ещё</span>
+            </button>
+            <b class="show-goods__main-text">Показать еще 100500 товаров</b>
+            <p class="show-goods__text">На самом деле вкусов гораздо больше!</p>
+            <a class="link-btn  show-goods__link-show-all" href="#">
+              Показать все
+            </a>
+          </li>
         </ul>
-        <div class="show-goods  basic-goods__show-goods inner">
-          <button class="show-goods__button-add  show-goods__button-add--plus" type="button" name="add-basic-goods">
-            <span class="visually-hidden">Показать ещё</span>
-          </button>
-          <b class="show-goods__main-text">Показать еще 100500 товаров</b>
-          <p class="show-goods__text">На самом деле вкусов гораздо больше!</p>
-          <a class="link-btn  show-goods__link-show-all" href="#">
-            Показать все
-          </a>
-        </div>
       </div>
     </section>
 
@@ -313,7 +314,7 @@
               <a class="link-btn  additional-item__link" href="#">Заказать</a>
             </li>
           </ul>
-          <div class="special-offer  special-offer--present  additional-goods__special-offer">
+          <div class="special-offer  additional-goods__special-offer">
             <strong class="special-offer__text">Закажите все и&nbsp;получите чехол для кота в подарок!</strong>
           </div>
         </div>
@@ -323,13 +324,13 @@
 
 
   <footer class="page-footer">
-    <div class="container  page-footer__container  page-footer__container--top  page-footer__container--color--grey">
+    <div class="container  page-footer__container  page-footer__container--top">
       <div class="inner  page-footer__inner--top">
         <div class="for-dealers  page-footer__for-dealers">
           <a class="for-dealers__link" href="#">приглашаем к&nbsp;сотрудничеству дилеров!</a>
         </div>
         <address class="company-address  page-footer__company-address">
-          <p class="company-address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="company-address__text">ул. Большая Конюшенная, д. 19/8 <span class="company-address__town">Санкт-Петербург</span></p>
         </address>
       </div>
     </div>
@@ -337,7 +338,7 @@
     <img class="map-block" src="img/bg-map-mobile@1x.png" alt="Адрес компании ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
 
     <div class="container  page-footer__container  page-footer__container--bottom">
-      <div class="inner page-footer__inner--bottom">
+      <div class="inner  page-footer__inner--bottom">
         <a class="page-footer__logo-link" href="index.html">
           <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="Логотип компании Кэт энерджи" width="128" height="24">
         </a>

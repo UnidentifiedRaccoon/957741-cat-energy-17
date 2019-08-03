@@ -1,3 +1,11 @@
 .diet-program {
   padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-top: 80px;
+  }
 }

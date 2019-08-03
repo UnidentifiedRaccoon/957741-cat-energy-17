@@ -4,4 +4,9 @@
   padding-bottom: 28px;
   text-align: center;
   border-bottom: 1px solid $separating-line-color-dark;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-top: 28px;
+  }
 }

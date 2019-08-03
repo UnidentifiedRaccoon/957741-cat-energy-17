@@ -2,5 +2,31 @@
   &--top {
     display: flex;
     justify-content: space-between;
+    padding-top: 27px;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--top {
+      width: auto;
+      padding: 0 70px;
+      padding-top: 62px;
+      padding-bottom: 58px;
+    }
+
+    &--bottom {
+      display: flex;
+      padding-top: 35px;
+      padding-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &--top {
+      box-sizing: border-box;
+      padding-right: 90px;
+      padding-left: 75px;
+      width: 570px;
+    }
   }
 }

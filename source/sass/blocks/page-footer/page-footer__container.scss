@@ -1,13 +1,13 @@
 .page-footer__container {
   &--top {
-    padding-top: 27px;
-    padding-bottom: 23px;
     background-color: #ffffff;
   }
 
-  &--color {
-    &--grey {
-      background-color: $common-color-two;
-    }
+  &--color-gray {
+    background-color: $common-color-two;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: -295px;
   }
 }

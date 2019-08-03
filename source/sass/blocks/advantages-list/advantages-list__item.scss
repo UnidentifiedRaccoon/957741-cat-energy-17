@@ -27,7 +27,58 @@
     background-image: url("/img/advantage-dining@1x.png");
   }
 
-  &--result::before {
+  &--effective::before {
     background-image: url("/img/advantage-clock@1x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    margin-right: auto;
+    margin-bottom: 90px;
+    padding: 110px 0 45px 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    &::after {
+      position: absolute;
+      font-family: $main-font, "Arial", sans-serif;
+      font-size: 281px;
+      line-height: 200px;
+      color: $common-color-two;
+      z-index: -1;
+    }
+
+    &--healthy::after {
+      content: "1";
+      top: 0;
+      right: 30px;
+    }
+
+    &--quickly::after {
+      content: "2";
+      top: 0;
+      right: 15px;
+    }
+
+    &--nourishingly::after {
+      content: "3";
+      top: 0;
+      right: 10px;
+    }
+
+    &--effective::after {
+      content: "4";
+      top: 0;
+      right: 10px;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 70px;
   }
 }

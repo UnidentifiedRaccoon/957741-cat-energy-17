@@ -3,4 +3,9 @@
   padding-top: 21px;
   padding-bottom: 22px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+    width: auto;
+  }
 }

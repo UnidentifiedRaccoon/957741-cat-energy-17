@@ -54,11 +54,29 @@ input[type="radio"].visually-hidden {
 .container {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 1440px;
+  }
 }
 
 .inner {
   width: 280px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .title-basis {
@@ -70,17 +88,25 @@ input[type="radio"].visually-hidden {
   }
   line-height: 36px;
   color: #111111;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-page-title {
   text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .subtitle {
   display: flex;
   margin: 0;
   margin-left: 20px;
-  margin-right: 24px;
   position: relative;
   font: {
     family: $main-font, "Arial", sans-serif;
@@ -93,12 +119,40 @@ input[type="radio"].visually-hidden {
   &::after {
     content: "";
     position: relative;
-    right: -24px;
     top: 12px;
     flex-grow: 1;
+    margin-left: 24px;
     min-width: 20px;
     height: 3px;
     background-color: $common-color-one;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      position: relative;
+      left: -20px;
+      top: 22px;
+      margin-right: 17px;
+      width: 30px;
+      height: 3px;
+      background-color: $common-color-one;
+    }
+
+    &::after {
+      top: 22px;
+      margin-left: 35px;
+      min-width: 20px;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &::before {
+      width: 70px;
+    }
   }
 }
 
@@ -106,7 +160,12 @@ input[type="radio"].visually-hidden {
   margin: 0;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $text-color-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .link-btn {
@@ -122,6 +181,14 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: $common-color-one;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .map-block {

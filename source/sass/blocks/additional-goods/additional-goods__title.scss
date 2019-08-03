@@ -1,4 +1,9 @@
 .additional-goods__title {
   padding-bottom: 32px;
   border-bottom: 1px solid $separating-line-color-dark;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+    border: none;
+  }
 }

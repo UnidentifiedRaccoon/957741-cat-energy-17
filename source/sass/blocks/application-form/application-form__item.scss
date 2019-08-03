@@ -21,4 +21,21 @@
   &--checkbox {
     margin-bottom: 14px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    &--text {
+      margin-bottom: 20px;
+    }
+
+    &--radio {
+      margin-bottom: 13px;
+    }
+
+    &--checkbox {
+      margin-bottom: 14px;
+    }
+  }
 }

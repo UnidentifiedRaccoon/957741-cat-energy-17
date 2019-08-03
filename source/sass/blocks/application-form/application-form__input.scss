@@ -1,23 +1,17 @@
 .application-form__input {
   flex-grow: 1;
   box-sizing: border-box;
-  height: 45px;
-  padding-left: 16px;
-  padding-right: 15px;
+  padding: 12px 15px 13px 16px;
   font: inherit;
   text-transform: uppercase;
   border: solid 1px $separating-line-color-light;
 
   &::placeholder {
-    color: #444444; //Для современных браузеров
+    color: $text-color-light; //Для современных браузеров
   }
 
   &:-moz-placeholder {
-    color: #444444; //Для Firefox с версии 4 и до 19
-  }
-
-  &::-moz-placeholder {
-    color: #444444; //Для Firefox до версии 51
+    color: $text-color-light; //Для Firefox с версии 4 и до 19
   }
 
   &--email {
@@ -34,5 +28,9 @@
     background-repeat: no-repeat;
     background-position: (93%) center;
     background-size: 21px 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 10px 10px 23px;
   }
 }

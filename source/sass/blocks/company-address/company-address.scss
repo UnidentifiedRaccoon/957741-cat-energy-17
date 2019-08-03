@@ -1,0 +1,10 @@
+.company-address {
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+    text-align: right;
+  }
+
+  @media (min-width: $desctop-width) {
+    text-align: left;
+  }
+}

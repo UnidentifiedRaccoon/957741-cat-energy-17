@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
-<body>
+<body class="index-page">
 
 
   <header class="page-header">
@@ -22,15 +23,15 @@
         </button>
       </div>
       <nav class="main-nav">
-        <ul class="site-nav site-nav--visible  main-nav__site-nav">
-          <li class="site-nav__item  site-nav__item--active">
-            <a>Главная</a>
+        <ul class="site-nav  site-nav--visible main-nav__site-nav">
+          <li class="site-nav__item  site-nav__item--active  site-nav__item--active-index">
+            <a class="site-nav__link  site-nav__link--index">Главная</a>
           </li>
           <li class="site-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="site-nav__link  site-nav__link--index" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-nav__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-nav__link  site-nav__link--index" href="form.html">Подбор программы</a>
           </li>
         </ul>
     </div>
@@ -44,7 +45,6 @@
         <div class="inner  intro-presentation__inner">
           <h1 class="title-basis  main-page-title  intro-presentation__title">Функциональное питание для котов</h1>
           <strong class="intro-presentation__lead">Занялся собой? Займись котом!</strong>
-          <img src="img/intro-pack-image-mobile@1x.png" alt="Абсолютно ненатуральный Cat Energy со вкусом курицы" width="280" height="270">
           <a class="link-btn  intro-presentation__link" href="#">Подобрать программу</a>
         </div>
       </div>
@@ -102,7 +102,7 @@
                 Замените один-два приема обычной еды на наше функциональное питание.
               </p>
             </li>
-            <li class="advantages-list__item  advantages-list__item--result">
+            <li class="advantages-list__item  advantages-list__item--effective">
               <p class="text-basis  advantages-list__item-text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
               </p>
@@ -165,7 +165,7 @@
           <a class="for-dealers__link" href="#">приглашаем к&nbsp;сотрудничеству дилеров!</a>
         </div>
         <address class="company-address  page-footer__company-address">
-          <p class="company-address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="company-address__text">ул. Большая Конюшенная, д. 19/8 <span class="company-address__town">Санкт-Петербург</span></p>
         </address>
       </div>
     </div>
