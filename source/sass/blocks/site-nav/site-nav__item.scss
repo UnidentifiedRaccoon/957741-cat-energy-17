@@ -8,8 +8,18 @@
     width: auto;
     margin-right: 36px;
 
+    &--active {
+      border-bottom: 2px solid $common-color-one;
+    }
+
     &:first-child {
       margin-left: auto;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &--active-index {
+      border-bottom: 2px solid #ffffff;
     }
   }
 }

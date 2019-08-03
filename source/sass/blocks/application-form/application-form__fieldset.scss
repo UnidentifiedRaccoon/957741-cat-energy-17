@@ -23,4 +23,17 @@
       padding-top: 6px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    &--pet {
+      &--characteristics {
+        margin-bottom: 70px;
+      }
+
+      &--diet {
+        margin-left: 70px;
+        margin-right: 70px;
+      }
+    }
+  }
 }

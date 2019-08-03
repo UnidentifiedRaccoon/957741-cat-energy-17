@@ -48,32 +48,32 @@
       position: absolute;
       font-family: $main-font, "Arial", sans-serif;
       font-size: 281px;
-      line-height: 281px;
+      line-height: 200px;
       color: $common-color-two;
       z-index: -1;
     }
 
     &--healthy::after {
       content: "1";
-      top: -40px;
+      top: 0;
       right: 30px;
     }
 
     &--quickly::after {
       content: "2";
-      top: -40px;
+      top: 0;
       right: 15px;
     }
 
     &--nourishingly::after {
       content: "3";
-      top: -40px;
+      top: 0;
       right: 10px;
     }
 
     &--effective::after {
       content: "4";
-      top: -40px;
+      top: 0;
       right: 10px;
     }
   }

@@ -9,19 +9,11 @@
     padding-top: 7px;
     padding-bottom: 7px;
     color: #222222;
+  }
 
-    &:not([href]) {
-      border-bottom: 2px solid $common-color-one;
-    }
-
-    @media (min-width: $desctop-width) {
-      &--index {
-        color: #ffffff;
-
-        &:not([href]) {
-          border-bottom: 2px solid #ffffff;
-        }
-      }
+  @media (min-width: $desctop-width) {
+    &--index {
+      color: #ffffff;
     }
   }
 }

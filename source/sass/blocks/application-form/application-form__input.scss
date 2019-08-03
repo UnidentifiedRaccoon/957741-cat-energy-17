@@ -1,9 +1,7 @@
 .application-form__input {
   flex-grow: 1;
   box-sizing: border-box;
-  height: 45px;
-  padding-left: 16px;
-  padding-right: 15px;
+  padding: 12px 15px 13px 16px;
   font: inherit;
   text-transform: uppercase;
   border: solid 1px $separating-line-color-light;
@@ -30,5 +28,9 @@
     background-repeat: no-repeat;
     background-position: (93%) center;
     background-size: 21px 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 10px 10px 23px;
   }
 }
