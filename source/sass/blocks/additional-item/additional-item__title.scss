@@ -10,4 +10,16 @@
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: $desctop-column-width;
+    margin: 11px 80px 0 0;
+  }
 }

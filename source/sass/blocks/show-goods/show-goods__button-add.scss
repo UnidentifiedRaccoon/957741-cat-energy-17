@@ -28,4 +28,27 @@
       background-color: rgba(34, 34, 34, 0.2);
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+
+    &--plus {
+      width: 65px;
+      height: 65px;
+
+      &::before {
+        top: 29px;
+        left: 5px;
+        width: 61px;
+        height: 2px;
+      }
+
+      &::after {
+        top: 2px;
+        left: 34px;
+        width: 2px;
+        height: 61px;
+      }
+    }
+  }
 }

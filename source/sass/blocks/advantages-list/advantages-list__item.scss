@@ -36,6 +36,7 @@
     margin-right: auto;
     margin-bottom: 90px;
     padding: 110px 0 45px 0;
+
     &::before {
       width: 80px;
       height: 80px;
@@ -51,21 +52,25 @@
       color: $common-color-two;
       z-index: -1;
     }
+
     &--healthy::after {
       content: "1";
       top: -40px;
       right: 30px;
     }
+
     &--quickly::after {
       content: "2";
       top: -40px;
       right: 15px;
     }
+
     &--nourishingly::after {
       content: "3";
       top: -40px;
       right: 10px;
     }
+
     &--effective::after {
       content: "4";
       top: -40px;
@@ -74,7 +79,6 @@
   }
 
   @media (min-width: $desctop-width) {
-    margin-bottom: 70px
+    margin-bottom: 70px;
   }
-
 }

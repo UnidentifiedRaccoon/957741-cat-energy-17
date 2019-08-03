@@ -1,7 +1,8 @@
 .intro-presentation__title {
   margin-bottom: 23px;
   color: #ffffff;
-  @media (min-width: 768px) {
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 40px;
     width: 500px;
     color: #111111;

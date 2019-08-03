@@ -1,5 +1,5 @@
 .company-address__town {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: block;
     margin-top: 20px;
   }

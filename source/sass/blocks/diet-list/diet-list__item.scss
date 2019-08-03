@@ -42,23 +42,28 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
     padding: 78px 0 41px 53px;
+
     &::before {
       top: 92px;
       left: (63%);
       width: 200px;
       height: 200px;
     }
+
     &--loos {
       padding-right: 275px;
-      &:after {
+
+      &::after {
         top: 80px;
         left: (67%);
         width: 141px;
         height: 194px;
       }
     }
+
     &--gain {
       padding-right: 315px;
+
       &::after {
         top: 135px;
         left: (58%);
@@ -72,23 +77,28 @@
     box-sizing: border-box;
     width: 570px;
     padding-right: 0;
+
     &::before {
       top: 47px;
       left: (9%);
       width: 100px;
       height: 100px;
     }
+
     &--loos {
       padding-right: 55px;
-      &:after {
+
+      &::after {
         top: 40px;
         left: (12%);
         width: 71px;
         height: 97px;
       }
     }
+
     &--gain {
       padding-right: 70px;
+
       &::after {
         top: 70px;
         left: (6%);
@@ -97,5 +107,4 @@
       }
     }
   }
-
 }

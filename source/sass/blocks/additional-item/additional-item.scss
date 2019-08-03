@@ -1,5 +1,25 @@
 .additional-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-top: 13px;
   padding-bottom: 18px;
   border-bottom: 1px solid $separating-line-color-dark;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 36px 28px 36px;
+    border: 1px solid $separating-line-color-light;
+  }
+
+  @media (min-width: $desctop-width) {
+    justify-content: flex-start;
+    padding: 15px 0 17px 0;
+    width: (100%);
+    border: none;
+    border-top: 1px solid $separating-line-color-dark;
+
+    &:last-child {
+      border-bottom: 1px solid $separating-line-color-dark;
+    }
+  }
 }

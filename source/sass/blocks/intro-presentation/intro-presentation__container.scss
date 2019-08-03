@@ -1,8 +1,9 @@
 .intro-presentation__container {
-  background-image:   url("/img/intro-pack-image-mobile@1x.png"),
-  url("/img/intro-background-mobile@1x.jpg");
+  background-image: url("/img/intro-pack-image-mobile@1x.png"),
+    url("/img/intro-background-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center 167px, center 0;
+
   @media (min-width: $tablet-width) {
     background-image: url("/img/intro-pack-image-tablet@1x.jpg");
     background-repeat: no-repeat;
