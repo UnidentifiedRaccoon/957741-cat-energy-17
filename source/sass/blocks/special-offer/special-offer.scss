@@ -4,7 +4,7 @@
   align-items: center;
   width: (100%);
   min-height: 289px;
-  background-image: url("/img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -15,7 +15,7 @@
     margin-top: 65px;
     width: 56px;
     height: 61px;
-    background-image: url("/img/icon-gift-white.svg");
+    background-image: url("../img/icon-gift-white.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -24,7 +24,7 @@
     align-items: flex-start;
     flex-direction: row;
     min-height: 200px;
-    background-image: url("/img/gift-photo-tablet@1x.jpg");
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     &::before {
       margin: 65px auto 0 90px;
@@ -35,7 +35,7 @@
     flex-direction: column;
     width: $desctop-column-width;
     min-height: 289px;
-    background-image: url("/img/gift-photo-desktop@1x.jpg");
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
 

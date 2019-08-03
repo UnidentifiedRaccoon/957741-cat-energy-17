@@ -16,19 +16,19 @@
   }
 
   &--healthy::before {
-    background-image: url("/img/advantage-leaf@1x.png");
+    background-image: url("../img/advantage-leaf@1x.png");
   }
 
   &--quickly::before {
-    background-image: url("/img/advantage-powder@1x.png");
+    background-image: url("../img/advantage-powder@1x.png");
   }
 
   &--nourishingly::before {
-    background-image: url("/img/advantage-dining@1x.png");
+    background-image: url("../img/advantage-dining@1x.png");
   }
 
   &--effective::before {
-    background-image: url("/img/advantage-clock@1x.png");
+    background-image: url("../img/advantage-clock@1x.png");
   }
 
   @media (min-width: $tablet-width) {
