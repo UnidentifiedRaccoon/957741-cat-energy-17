@@ -52,32 +52,48 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 320px;
+  box-sizing: border-box;
   margin: 0 auto;
+  padding: 0 20px;
+  width: 320px;
+
+  &--gray {
+    background-color: $common-color-two;
+  }
+
+  &--white {
+    background-color: #ffffff;
+  }
+
+  &--green {
+    background-color: $common-color-one;
+  }
 
   @media (min-width: $tablet-width) {
     width: 768px;
-  }
-
-  @media (min-width: $desctop-width) {
-    width: 1440px;
-  }
-}
-
-.inner {
-  width: 280px;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
     padding: 0 30px;
   }
 
   @media (min-width: $desctop-width) {
-    width: 1220px;
+    width: 1440px;
     padding: 0 110px;
   }
 }
+
+// .inner {
+//   width: 280px;
+//   padding: 0 20px;
+//
+//   @media (min-width: $tablet-width) {
+//     width: 708px;
+//     padding: 0 30px;
+//   }
+//
+//   @media (min-width: $desctop-width) {
+//     width: 1220px;
+//     padding: 0 110px;
+//   }
+// }
 
 .title-basis {
   margin: 0;
@@ -106,7 +122,7 @@ input[type="radio"].visually-hidden {
 .subtitle {
   display: flex;
   margin: 0;
-  margin-left: 20px;
+  padding-left: 20px;
   position: relative;
   font: {
     family: $main-font, "Arial", sans-serif;

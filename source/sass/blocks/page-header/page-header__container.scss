@@ -1,11 +1,18 @@
 .page-header__container {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    box-sizing: border-box;
-    padding-right: 30px;
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid $separating-line-color-light;
 
-  @media (min-width: $desctop-width) {
-    padding-right: 110px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   display: flex;
+  //   box-sizing: border-box;
+  //   padding-right: 30px;
+  // }
+  //
+  // @media (min-width: $desctop-width) {
+  //   padding-right: 110px;
+  // }
 }

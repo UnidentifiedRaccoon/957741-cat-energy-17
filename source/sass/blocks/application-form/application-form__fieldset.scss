@@ -1,26 +1,26 @@
 .application-form__fieldset {
   margin: 0;
-  padding: 0;
+  padding: 0 20px 0 20px;
   border: none;
 
   &--pet {
     &--diet {
+      margin-bottom: 27px;
       border: 1px solid $separating-line-color-light;
     }
 
     &--additional {
-      padding-top: 24px;
-      padding-bottom: 13px;
+      margin-bottom: 11px;
     }
   }
 
   &--person {
     &--contacts {
-      padding-top: 27px;
+      margin-bottom: 6px;
     }
 
     &--message {
-      padding-top: 6px;
+      margin-bottom: 24px;
     }
   }
 

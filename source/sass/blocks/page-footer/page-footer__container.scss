@@ -1,6 +1,9 @@
 .page-footer__container {
   &--top {
-    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 27px;
+    padding-bottom: 23px;
   }
 
   &--color-gray {

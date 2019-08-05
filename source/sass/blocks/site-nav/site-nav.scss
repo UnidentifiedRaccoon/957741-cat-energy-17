@@ -1,5 +1,4 @@
 .site-nav {
-  display: none;
   margin: 0;
   padding: 0;
   font: {
@@ -10,10 +9,6 @@
   line-height: 20px;
   list-style: none;
   text-transform: uppercase;
-
-  &--visible {
-    display: block;
-  }
 
   @media (min-width: $tablet-width) {
     display: flex;

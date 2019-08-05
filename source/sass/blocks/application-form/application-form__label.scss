@@ -18,8 +18,8 @@
       position: relative;
       margin: 0;
       padding-left: 46px;
-      padding-top: 8px;
-      padding-bottom: 5px;
+      padding-top: 5px;
+      padding-bottom: 7px;
 
       &::before {
         content: "";
@@ -36,8 +36,8 @@
       &::after {
         content: "";
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 9px;
+        left: 9px;
         width: 12px;
         height: 12px;
         background-color: $common-color-one;
