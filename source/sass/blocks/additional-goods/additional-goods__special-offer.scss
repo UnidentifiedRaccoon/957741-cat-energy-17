@@ -1,5 +1,9 @@
 .additional-goods__special-offer {
-  margin-bottom: 35px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: $mobile-edge-space;
+  margin-right: $mobile-edge-space;
+
+  @media (min-width: $tablet-width) {
+    margin-left: $tablet-edge-space;
+    margin-right: $tablet-edge-space;
+  }
 }

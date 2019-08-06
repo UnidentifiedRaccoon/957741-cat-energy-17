@@ -13,6 +13,7 @@
 
   <header class="page-header">
     <div class="container  page-header__container">
+      <div class="page-header__top-wrap">
       <div class="page-header__logo">
         <a class="page-header__logo-link" href="index.html">
           <img class="page-header__logo-image" src="img/logo-mobile-header.svg" alt="Логотип компании Кэт энерджи" width="191" height="39">
@@ -23,7 +24,6 @@
       </button>
     </div>
       <nav class="main-nav">
-        <div class="container  main-nav__container">
         <ul class="site-nav  main-nav__site-nav">
           <li class="site-nav__item">
             <a class="site-nav__link" href="index.html">Главная</a>
@@ -120,7 +120,7 @@
           <h3 class="subtitle  application-form__fieldset-title" id="fieldset-5-title">Дополнительно</h3>
           <fieldset class="application-form__fieldset  application-form__fieldset--pet--additional" aria-labelledby="fieldset-5-title">
             <legend></legend>
-            <ul class="application-form__list">
+            <ul class="application-form__list  application-form__list--additional">
               <li class="application-form__item  application-form__item--checkbox">
                 <input class="application-form__checkbox  visually-hidden" type="checkbox" name="sweetener" checked>
                 <label class="application-form__label  application-form__label--for--checkbox">Сахарозаменитель</label>
@@ -139,23 +139,25 @@
               </li>
             </ul>
           </fieldset>
+          <div class="application-form__bottom-wrap">
           <button class="link-btn application-form__submit-button" type="submit" name="submit-button">Отправить заявку</button>
+          <small class="application-form__small-info">
+            * — Обязательные поля
+          </small>
+        </div>
         </form>
-        <small class="application__small-info">
-          * — Обязательные поля
-        </small>
       </div>
     </section>
   </main>
 
 
   <footer class="page-footer">
-    <div class="container  page-footer__container  page-footer__container--top  page-footer__container--color--grey">
+    <div class="container  page-footer__container  page-footer__container--top">
       <div class="for-dealers  page-footer__for-dealers">
         <a class="for-dealers__link" href="#">приглашаем к&nbsp;сотрудничеству дилеров!</a>
       </div>
       <address class="company-address  page-footer__company-address">
-        <p class="company-address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="company-address__text">ул. Большая Конюшенная, д. 19/8 <span class="company-address__town">Санкт-Петербург</span></p>
       </address>
     </div>
 

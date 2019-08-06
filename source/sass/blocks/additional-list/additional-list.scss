@@ -1,13 +1,10 @@
 .additional-list {
   margin: 0;
-  padding: 0 20px 0 20px;
+  padding: 0 $mobile-edge-space;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    width: (100%);
-  }
-
-  @media (min-width: $desctop-width) {
+    padding: 0 $tablet-edge-space;
     width: auto;
   }
 }

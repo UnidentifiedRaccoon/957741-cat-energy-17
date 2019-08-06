@@ -54,7 +54,7 @@ input[type="radio"].visually-hidden {
 .container {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 $mobile-edge-space;
   width: 320px;
 
   &--gray {
@@ -71,7 +71,7 @@ input[type="radio"].visually-hidden {
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 0 30px;
+    padding: 0 $tablet-edge-space;
   }
 
   @media (min-width: $desctop-width) {
@@ -122,7 +122,7 @@ input[type="radio"].visually-hidden {
 .subtitle {
   display: flex;
   margin: 0;
-  padding-left: 20px;
+  padding-left: $mobile-edge-space;
   position: relative;
   font: {
     family: $main-font, "Arial", sans-serif;

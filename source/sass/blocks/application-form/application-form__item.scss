@@ -19,7 +19,7 @@
   }
 
   &--checkbox {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: $tablet-width) {
@@ -31,11 +31,16 @@
     }
 
     &--radio {
-      margin-bottom: 13px;
+      margin-bottom: 20px;
     }
 
     &--checkbox {
-      margin-bottom: 14px;
+      width: (45%);
+      margin-bottom: 32px;
+      &:last-child {
+        margin-bottom: 32px;
+      }
     }
+
   }
 }

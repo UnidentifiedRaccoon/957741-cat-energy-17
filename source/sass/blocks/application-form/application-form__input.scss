@@ -31,6 +31,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 10px 10px 23px;
+    padding: 11px 10px 10px 21px;
+
+    &--email {
+      background-position: (97%) 20px;
+    }
+
+    &--tel {
+      background-position: (97%) 15px;
+    }
   }
 }

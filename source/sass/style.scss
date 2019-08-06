@@ -5,6 +5,8 @@
 //
 @import "blocks/page-header/page-header.scss";
 @import "blocks/page-header/page-header__container.scss";
+@import "blocks/page-header/page-header__top-wrap.scss";
+@import "blocks/page-header/page-header__logo.scss";
 // @import "blocks/page-header/page-header__inner.scss";
 @import "blocks/page-header/page-header__toggle.scss";
 //
@@ -119,8 +121,6 @@
 // @import "blocks/application/application__inner.scss";
 @import "blocks/application/application__help-text.scss";
 @import "blocks/application/application__container.scss";
-@import "blocks/application/application__form.scss";
-@import "blocks/application/application__small-info.scss";
 //
 @import "blocks/application-form/application-form__fieldset.scss";
 @import "blocks/application-form/application-form__fieldset-title.scss";
@@ -129,7 +129,9 @@
 @import "blocks/application-form/application-form__label.scss";
 @import "blocks/application-form/application-form__input.scss";
 @import "blocks/application-form/application-form__message.scss";
+@import "blocks/application-form/application-form__bottom-wrap.scss";
 @import "blocks/application-form/application-form__submit-button.scss";
+@import "blocks/application-form/application-form__small-info.scss";
 //
 //
 @import "blocks/styles-for-pages/catalog-page__page-title-container.scss";

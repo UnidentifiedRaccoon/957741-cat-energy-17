@@ -1,4 +1,10 @@
 .main-nav {
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+  }
+
   &--closed {
     display: none;
   }
@@ -8,6 +14,10 @@
   }
 
   &--nojs {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

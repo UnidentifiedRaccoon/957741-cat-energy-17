@@ -1,6 +1,6 @@
 .application-form__fieldset {
   margin: 0;
-  padding: 0 20px 0 20px;
+  padding: 0;
   border: none;
 
   &--pet {
@@ -20,19 +20,35 @@
     }
 
     &--message {
-      margin-bottom: 24px;
+      margin: 0 20px 26px 20px;
     }
   }
 
   @media (min-width: $tablet-width) {
+    margin-left: $tablet-edge-space+40px;
+    margin-right: $tablet-edge-space+40px;
     &--pet {
       &--characteristics {
-        margin-bottom: 70px;
+        margin-bottom: 47px;
       }
 
       &--diet {
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-bottom: 82px;
+      }
+
+      &--additional {
+        margin-top: 20px;
+      }
+    }
+
+    &--person {
+      &--contacts {
+        padding-top: 35px;
+        margin-bottom: 40px;
+      }
+
+      &--message {
+        margin-bottom: 62px;
       }
     }
   }

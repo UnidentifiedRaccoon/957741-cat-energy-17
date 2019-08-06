@@ -2,15 +2,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  border-bottom: 1px solid $separating-line-color-light;
+  padding: 0;
 
-  // @media (min-width: $tablet-width) {
-  //   display: flex;
-  //   box-sizing: border-box;
-  //   padding-right: 30px;
-  // }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    box-sizing: border-box;
+    padding-right: $tablet-edge-space;
+    padding-left: $tablet-edge-space;
+  }
   //
   // @media (min-width: $desctop-width) {
   //   padding-right: 110px;

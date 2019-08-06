@@ -1,0 +1,10 @@
+.application-form__bottom-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 $mobile-edge-space;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+    margin: 0 $tablet-edge-space+40px 22px $tablet-edge-space+40px;
+  }
+}

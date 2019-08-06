@@ -1,12 +1,16 @@
 .application-form__list {
   margin: 0;
-  padding: 0;
-  padding-top: 21px;
-  padding-bottom: 22px;
+  padding: 21px $mobile-edge-space 22px $mobile-edge-space;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    padding: 25px 0 25px 0;
     width: auto;
+    &--additional {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-bottom: 10px;
+    }
   }
 }

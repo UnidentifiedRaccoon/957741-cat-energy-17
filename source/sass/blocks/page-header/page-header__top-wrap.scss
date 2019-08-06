@@ -1,0 +1,13 @@
+.page-header__top-wrap {
+  display: flex;
+  flex-grow: 1;
+  padding: 11px $mobile-edge-space;
+  border-bottom: 1px solid $separating-line-color-light;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+    margin-right: auto;
+    padding: 0;
+    border: none;
+  }
+}
