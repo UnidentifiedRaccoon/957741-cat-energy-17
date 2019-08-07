@@ -7,4 +7,8 @@
     padding-bottom: 17px;
     width: 245px;
   }
+
+  @media (min-width: $desctop-width) {
+    margin-top: 23px;
+  }
 }

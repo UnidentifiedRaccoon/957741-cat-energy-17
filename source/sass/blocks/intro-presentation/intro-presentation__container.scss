@@ -17,10 +17,14 @@
     background-repeat: no-repeat;
     background-position: center 240px;
   }
-  //
-  // @media (min-width: $desctop-width) {
-  //   background-image: url("../img/intro-pack-image-desktop@1x.png");
-  //   background-repeat: no-repeat;
-  //   background-position: (63%) 10px;
-  // }
+
+  @media (min-width: $desctop-width) {
+    padding-left: 190px;
+    padding-top: 95px;
+    width: auto;
+    min-height: 570px;
+    background-image: url("../img/intro-pack-image-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: (63%) 10px;
+  }
 }

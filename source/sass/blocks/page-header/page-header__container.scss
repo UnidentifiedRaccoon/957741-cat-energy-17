@@ -10,8 +10,9 @@
     padding-right: $tablet-edge-space;
     padding-left: $tablet-edge-space;
   }
-  //
-  // @media (min-width: $desctop-width) {
-  //   padding-right: 110px;
-  // }
+
+  @media (min-width: $desctop-width) {
+    padding-right: $desctop-edge-space;
+    padding-left: $desctop-edge-space;
+  }
 }

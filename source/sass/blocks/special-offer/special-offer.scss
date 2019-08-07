@@ -33,6 +33,7 @@
 
   @media (min-width: $desctop-width) {
     flex-direction: column;
+    flex-grow: 0;
     width: $desctop-column-width;
     min-height: 289px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
@@ -42,6 +43,7 @@
     &::before {
       margin: auto;
       margin-top: 65px;
+      margin-bottom: 60px;
     }
   }
 }

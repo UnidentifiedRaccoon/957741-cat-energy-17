@@ -27,6 +27,7 @@
   @media (min-width: $tablet-width) {
     margin-left: $tablet-edge-space+40px;
     margin-right: $tablet-edge-space+40px;
+
     &--pet {
       &--characteristics {
         margin-bottom: 47px;
@@ -49,6 +50,41 @@
 
       &--message {
         margin-bottom: 62px;
+      }
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-left: $desctop-edge-space;
+    margin-right: $desctop-edge-space;
+
+    &--pet {
+      &--characteristics {
+        display: inline-block;
+        margin-right: 75px;
+        margin-bottom: 45px;
+        width: (39.5%);
+      }
+
+      &--diet {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        margin-top: 25px;
+        margin-bottom: 45px;
+        padding-bottom: 7px;
+        width: (39.5%);
+      }
+
+      &--additional {
+        margin-top: 23px;
+        margin-bottom: 19px;
+      }
+    }
+
+    &--person {
+      &--contacts {
+        margin-bottom: 24px;
       }
     }
   }
