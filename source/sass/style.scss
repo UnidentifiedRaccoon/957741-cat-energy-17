@@ -6,7 +6,7 @@
 @import "blocks/page-header/page-header.scss";
 @import "blocks/page-header/page-header__container.scss";
 @import "blocks/page-header/page-header__top-wrap.scss";
-@import "blocks/page-header/page-header__logo.scss";
+@import "blocks/page-header/page-header__logo-link.scss";
 @import "blocks/page-header/page-header__toggle.scss";
 //
 @import "blocks/main-nav/main-nav.scss";
@@ -98,7 +98,6 @@
 @import "blocks/additional-goods/additional-goods__title-container.scss";
 @import "blocks/additional-goods/additional-goods__title.scss";
 @import "blocks/additional-goods/additional-goods__container.scss";
-@import "blocks/additional-goods/additional-goods__special-offer.scss";
 //
 @import "blocks/additional-list/additional-list.scss";
 // Пришлось вынести от основного блока из зи переопределения

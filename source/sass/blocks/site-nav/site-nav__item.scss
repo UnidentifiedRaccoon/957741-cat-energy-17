@@ -1,12 +1,23 @@
 .site-nav__item {
   width: (100%);
   text-align: center;
+  color: $text-color-dark;
   border-bottom: 1px solid $separating-line-color-light;
 
+    &:not(&--active):hover,
+    &:not(&--active):focus {
+      opacity: 0.6;
+    }
+
+    &:not(&--active):active {
+      opacity: 0.3;
+    }
+
   @media (min-width: $tablet-width) {
-    border: none;
-    width: auto;
     margin-right: 36px;
+    width: auto;
+    border: none;
+    color: #222222;
 
     &--active {
       border-bottom: 2px solid $common-color-one;

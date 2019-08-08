@@ -30,6 +30,19 @@
     background-size: 21px 21px;
   }
 
+  &--error {
+    border-color: $error-color;
+  }
+
+  &:hover {
+    border-color: $separating-line-color-dark;
+  }
+
+  &:focus {
+    border-color: $text-color-light;
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 11px 10px 10px 21px;
 
