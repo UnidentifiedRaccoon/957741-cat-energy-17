@@ -43,20 +43,6 @@
     outline: none;
   }
 
-  &--radio {
-    &:checked {
-      &~.application-form__radio-box::after {
-        display: block;
-      }
-    }
-    &:disabled {
-      &~.application-form__radio-box,
-      &~.application-form__radio-text {
-        opacity: 0.3;
-      }
-    }
-  }
-
   @media (min-width: $tablet-width) {
     padding: 11px 10px 10px 21px;
 

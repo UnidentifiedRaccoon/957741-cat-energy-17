@@ -1,0 +1,14 @@
+.radio__input {
+  &:checked {
+    &~.radio__box::after {
+      display: block;
+    }
+  }
+  &:disabled {
+    &~.radio__box,
+    &~.radio__text {
+      opacity: 0.3;
+      user-select: none;
+    }
+  }
+}

@@ -123,11 +123,15 @@
 @import "blocks/application-form/application-form__item.scss";
 @import "blocks/application-form/application-form__label.scss";
 @import "blocks/application-form/application-form__input.scss";
-@import "blocks/application-form/application-form__radio-box.scss";
 @import "blocks/application-form/application-form__message.scss";
 @import "blocks/application-form/application-form__bottom-wrap.scss";
 @import "blocks/application-form/application-form__submit-button.scss";
 @import "blocks/application-form/application-form__small-info.scss";
+//
+@import "blocks/radio/radio.scss";
+@import "blocks/radio/radio__box.scss";
+@import "blocks/radio/radio__input.scss";
+
 //
 //
 @import "blocks/styles-for-pages/catalog-page__page-title-container.scss";
