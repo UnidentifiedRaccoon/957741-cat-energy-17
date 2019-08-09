@@ -4,9 +4,10 @@
   padding-top: 29px;
   min-height: 480px;
   background-image: url("../img/intro-pack-image-mobile@1x.png"),
-    url("../img/intro-background-mobile@1x.jpg");
+    url("../img/intro-background-mobile@1x.jpg"),
+    linear-gradient(to bottom, $common-color-one 60%, #ffffff 60%);
   background-repeat: no-repeat, no-repeat;
-  background-position: center 167px, center 0;
+  background-position: center 167px, center 0, 0 0;;
 
   @media (min-width: $tablet-width) {
     padding-left: 119px;
@@ -21,7 +22,6 @@
   @media (min-width: $desctop-width) {
     padding-left: 190px;
     padding-top: 95px;
-    width: auto;
     min-height: 570px;
     background-image: url("../img/intro-pack-image-desktop@1x.png");
     background-repeat: no-repeat;

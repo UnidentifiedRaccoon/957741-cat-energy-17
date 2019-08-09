@@ -5,8 +5,7 @@
   padding-top: 6px;
   padding-bottom: 7px;
 
-  &:hover .radio__box::before,
-  &:focus .radio__box::before {
+  &:hover .radio__box::before {
     border-color: #bababa;
   }
 
