@@ -2,6 +2,34 @@
 <html lang="ru">
 
 <head>
+  <!-- Pixel Glass -->
+  <!-- <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("paxelglass_img/index-mobile.png");
+    }
+
+    /* Планшет */
+    @media (min-width: 768px) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("paxelglass_img/index-tablet.png");
+      }
+    }
+
+    /* Десктоп */
+    @media (min-width: 1300px) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("paxelglass_img/index-desctop.png");
+      }
+    }
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script> -->
+  <!-- // Pixel Glass -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
@@ -17,10 +45,10 @@
         <a class="page-header__logo-link">
           <img class="page-header__logo-image" src="img/logo-mobile-header.svg" alt="Логотип компании Кэт энерджи" width="191" height="39">
         </a>
-      <button class="page-header__toggle  page-header__toggle--closed" type="button">
-        <span class="visually-hidden">Открывает или закрывает сайт-меню</span>
-      </button>
-    </div>
+        <button class="page-header__toggle  page-header__toggle--closed" type="button">
+          <span class="visually-hidden">Открывает или закрывает сайт-меню</span>
+        </button>
+      </div>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <ul class="site-nav  main-nav__site-nav">
           <li class="site-nav__item  site-nav__item--active  site-nav__item--active-index">
@@ -33,8 +61,8 @@
             <a class="site-nav__link  site-nav__link--index" href="form.html">Подбор программы</a>
           </li>
         </ul>
-    </nav>
-  </div>
+      </nav>
+    </div>
   </header>
 
 

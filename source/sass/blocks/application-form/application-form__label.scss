@@ -20,30 +20,6 @@
       padding-left: 46px;
       padding-top: 6px;
       padding-bottom: 7px;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        box-sizing: border-box;
-        width: 30px;
-        height: 30px;
-        border: 1px solid $separating-line-color-light;
-        border-radius: 50%;
-      }
-
-      &::after {
-        display: none;
-        content: "";
-        position: absolute;
-        top: 9px;
-        left: 9px;
-        width: 12px;
-        height: 12px;
-        background-color: $common-color-one;
-        border-radius: 50%;
-      }
     }
 
     &--checkbox {
@@ -97,20 +73,6 @@
         padding-left: 60px;
         padding-top: 8px;
         padding-bottom: 5px;
-
-        &::before {
-          top: 0;
-          left: 0;
-          width: 40px;
-          height: 40px;
-        }
-
-        &::after {
-          top: 11px;
-          left: 11px;
-          width: 18px;
-          height: 18px;
-        }
       }
 
       &--checkbox {
