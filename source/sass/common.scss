@@ -148,7 +148,7 @@ input[type="radio"].visually-hidden {
     line-height: 36px;
 
     &::before {
-       content: "";
+      content: "";
       position: relative;
       left: -20px;
       top: 22px;
@@ -209,10 +209,12 @@ input[type="radio"].visually-hidden {
 
   &--gray {
     background-color: $common-color-two;
+
     &:hover,
     &:focus {
       background-color: $common-color-two-dark;
     }
+
     &:active {
       color: rgba(68, 68, 68, 0.3);
     }

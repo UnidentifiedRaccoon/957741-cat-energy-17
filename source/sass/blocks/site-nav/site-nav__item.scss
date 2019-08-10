@@ -4,14 +4,14 @@
   color: $text-color-dark;
   border-bottom: 1px solid $separating-line-color-light;
 
-    &:not(&--active):hover,
-    &:not(&--active):focus {
-      opacity: 0.6;
-    }
+  &:not(&--active):hover,
+  &:not(&--active):focus {
+    opacity: 0.6;
+  }
 
-    &:not(&--active):active {
-      opacity: 0.3;
-    }
+  &:not(&--active):active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 36px;

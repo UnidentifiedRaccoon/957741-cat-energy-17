@@ -1,17 +1,17 @@
 .radio__input {
-
-  &:focus~.radio__box::before {
+  &:focus ~ .radio__box::before {
     border-color: #bababa;
   }
 
   &:checked {
-    &~.radio__box::after {
+    & ~ .radio__box::after {
       display: block;
     }
   }
+
   &:disabled {
-    &~.radio__box,
-    &~.radio__text {
+    & ~ .radio__box,
+    & ~ .radio__text {
       opacity: 0.3;
       user-select: none;
       cursor: not-allowed;
