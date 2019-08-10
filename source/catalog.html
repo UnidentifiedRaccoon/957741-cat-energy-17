@@ -2,6 +2,34 @@
 <html lang="ru">
 
 <head>
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("pixelglass_img/catalog-mobile.png");
+    }
+
+    /* Планшет */
+    @media (min-width: 768px) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("pixelglass_img/catalog-tablet.png");
+      }
+    }
+
+    /* Десктоп */
+    @media (min-width: 1300px) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("pixelglass_img/catalog-desctop.png");
+      }
+    }
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">

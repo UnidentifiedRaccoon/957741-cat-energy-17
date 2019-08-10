@@ -1,7 +1,6 @@
 .index-page {
   @media (min-width: $desctop-width) {
     background-image: url("../img/intro-background-desktop@1x.jpg"),
-    // linear-gradient(to top, #ffffff 50%, $common-color-one-dark 50%),
     linear-gradient(to right, #ffffff 50%, $common-color-one-dark 50%);
     background-size: auto 700px;
     background-repeat: no-repeat;

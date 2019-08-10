@@ -8,7 +8,7 @@
     margin: 0 $tablet-edge-space+40px 22px $tablet-edge-space+40px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desctop-width) {
     margin: 0 $desctop-edge-space;
   }
 }
