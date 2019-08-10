@@ -32,10 +32,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 260px;
+    width: 245px;
     margin-right: auto;
     margin-bottom: 90px;
     padding: 110px 0 45px 0;
+
+    &:nth-child(odd) {
+      margin-right: 140px;
+    }
 
     &::before {
       width: 80px;
@@ -80,5 +84,14 @@
 
   @media (min-width: $desctop-width) {
     margin-bottom: 70px;
+    margin-right: auto;
+
+    &:nth-child(odd) {
+      margin-right: auto;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

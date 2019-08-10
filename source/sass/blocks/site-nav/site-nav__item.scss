@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 36px;
+    margin-left: 34px;
     width: auto;
     border: none;
     color: #222222;
@@ -24,7 +24,7 @@
     }
 
     &:first-child {
-      margin-left: auto;
+    // margin-left: 0;
     }
   }
 
