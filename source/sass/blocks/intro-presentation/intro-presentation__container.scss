@@ -1,18 +1,29 @@
 .intro-presentation__container {
-  background-image: url("/img/intro-pack-image-mobile@1x.png"),
-    url("/img/intro-background-mobile@1x.jpg");
+  display: flex;
+  flex-direction: column;
+  padding-top: 29px;
+  min-height: 480px;
+  background-image: url("../img/intro-pack-image-mobile@1x.png"),
+    url("../img/intro-background-mobile@1x.jpg"),
+    linear-gradient(to bottom, $common-color-one 60%, #ffffff 60%);
   background-repeat: no-repeat, no-repeat;
-  background-position: center 167px, center 0;
+  background-position: center 167px, center 0, 0 0;
 
   @media (min-width: $tablet-width) {
-    background-image: url("/img/intro-pack-image-tablet@1x.jpg");
+    padding-left: 119px;
+    padding-top: 40px;
+    min-height: 840px;
+    align-items: flex-start;
+    background-image: url("../img/intro-pack-image-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 240px;
   }
 
   @media (min-width: $desctop-width) {
-    background-image: url("/img/intro-pack-image-desktop@1x.png");
+    padding-top: 95px;
+    min-height: 570px;
+    background-image: url("../img/intro-pack-image-desktop@1x.png"),;
     background-repeat: no-repeat;
-    background-position: (63%) 10px;
+    background-position: (66%) 10px;
   }
 }

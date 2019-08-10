@@ -5,15 +5,19 @@
 //
 @import "blocks/page-header/page-header.scss";
 @import "blocks/page-header/page-header__container.scss";
-@import "blocks/page-header/page-header__inner.scss";
+@import "blocks/page-header/page-header__top-wrap.scss";
+@import "blocks/page-header/page-header__logo-link.scss";
+@import "blocks/page-header/page-header__logo-image.scss";
 @import "blocks/page-header/page-header__toggle.scss";
+//
+@import "blocks/main-nav/main-nav.scss";
+@import "blocks/main-nav/main-nav__container.scss";
 //
 @import "blocks/site-nav/site-nav.scss";
 @import "blocks/site-nav/site-nav__item.scss";
 @import "blocks/site-nav/site-nav__link.scss";
 //
 @import "blocks/intro-presentation/intro-presentation__container.scss";
-@import "blocks/intro-presentation/intro-presentation__inner.scss";
 @import "blocks/intro-presentation/intro-presentation__title.scss";
 @import "blocks/intro-presentation/intro-presentation__lead.scss";
 @import "blocks/intro-presentation/intro-presentation__link.scss";
@@ -53,7 +57,6 @@
 //
 @import "blocks/page-footer/page-footer.scss";
 @import "blocks/page-footer/page-footer__container.scss";
-@import "blocks/page-footer/page-footer__inner.scss";
 @import "blocks/page-footer/page-footer__logo-link.scss";
 @import "blocks/page-footer/page-footer__social.scss";
 //
@@ -71,6 +74,8 @@
 @import "blocks/copyright/copyright__link.scss";
 @import "blocks/copyright/copyright__link-text.scss";
 //
+//
+@import "blocks/basic-goods/basic-goods__container.scss";
 //
 @import "blocks/basic-list/basic-list.scss";
 @import "blocks/basic-list/basic-list__item.scss";
@@ -91,9 +96,9 @@
 @import "blocks/show-goods/show-goods__link-show-all.scss";
 //
 @import "blocks/additional-goods/additional-goods.scss";
+@import "blocks/additional-goods/additional-goods__title-container.scss";
 @import "blocks/additional-goods/additional-goods__title.scss";
-@import "blocks/additional-goods/additional-goods__inner.scss";
-@import "blocks/additional-goods/additional-goods__special-offer.scss";
+@import "blocks/additional-goods/additional-goods__container.scss";
 //
 @import "blocks/additional-list/additional-list.scss";
 // Пришлось вынести от основного блока из зи переопределения
@@ -110,9 +115,8 @@
 //
 //
 @import "blocks/application/application.scss";
-@import "blocks/application/application__inner.scss";
 @import "blocks/application/application__help-text.scss";
-@import "blocks/application/application__small-info.scss";
+@import "blocks/application/application__container.scss";
 //
 @import "blocks/application-form/application-form__fieldset.scss";
 @import "blocks/application-form/application-form__fieldset-title.scss";
@@ -121,7 +125,14 @@
 @import "blocks/application-form/application-form__label.scss";
 @import "blocks/application-form/application-form__input.scss";
 @import "blocks/application-form/application-form__message.scss";
+@import "blocks/application-form/application-form__bottom-wrap.scss";
 @import "blocks/application-form/application-form__submit-button.scss";
+@import "blocks/application-form/application-form__small-info.scss";
+//
+@import "blocks/radio/radio.scss";
+@import "blocks/radio/radio__box.scss";
+@import "blocks/radio/radio__input.scss";
+
 //
 //
 @import "blocks/styles-for-pages/catalog-page__page-title-container.scss";

@@ -1,6 +1,6 @@
 .advantages-list__item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   padding: 1px 1px 6px 80px;
 
   &::before {
@@ -16,26 +16,30 @@
   }
 
   &--healthy::before {
-    background-image: url("/img/advantage-leaf@1x.png");
+    background-image: url("../img/advantage-leaf@1x.png");
   }
 
   &--quickly::before {
-    background-image: url("/img/advantage-powder@1x.png");
+    background-image: url("../img/advantage-powder@1x.png");
   }
 
   &--nourishingly::before {
-    background-image: url("/img/advantage-dining@1x.png");
+    background-image: url("../img/advantage-dining@1x.png");
   }
 
   &--effective::before {
-    background-image: url("/img/advantage-clock@1x.png");
+    background-image: url("../img/advantage-clock@1x.png");
   }
 
   @media (min-width: $tablet-width) {
-    width: 260px;
+    width: 245px;
     margin-right: auto;
     margin-bottom: 90px;
     padding: 110px 0 45px 0;
+
+    &:nth-child(odd) {
+      margin-right: 140px;
+    }
 
     &::before {
       width: 80px;
@@ -80,5 +84,14 @@
 
   @media (min-width: $desctop-width) {
     margin-bottom: 70px;
+    margin-right: auto;
+
+    &:nth-child(odd) {
+      margin-right: auto;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

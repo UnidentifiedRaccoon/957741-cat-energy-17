@@ -12,4 +12,16 @@
   text-transform: uppercase;
   color: $text-color-light;
   border: solid 1px $separating-line-color-light;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 62px;
+    min-height: 175px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
 }

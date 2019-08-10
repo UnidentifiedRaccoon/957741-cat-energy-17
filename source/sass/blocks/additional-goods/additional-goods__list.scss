@@ -4,4 +4,8 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
   }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 0;
+  }
 }

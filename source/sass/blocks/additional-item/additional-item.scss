@@ -4,10 +4,14 @@
   justify-content: space-between;
   padding-top: 13px;
   padding-bottom: 18px;
-  border-bottom: 1px solid $separating-line-color-dark;
+  border-top: 1px solid $separating-line-color-dark;
+
+  &:last-child {
+    border-bottom: 1px solid $separating-line-color-dark;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 36px 28px 36px;
+    padding: 26px 36px 27px 36px;
     border: 1px solid $separating-line-color-light;
   }
 

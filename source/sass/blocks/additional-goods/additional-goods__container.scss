@@ -1,0 +1,9 @@
+.additional-goods__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desctop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

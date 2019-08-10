@@ -1,13 +1,28 @@
 .page-footer__container {
   &--top {
-    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 27px;
+    padding-bottom: 23px;
   }
 
-  &--color-gray {
-    background-color: $common-color-two;
+  @media (min-width: $tablet-width) {
+    &--top {
+      padding: 0 70px;
+      padding-top: 62px;
+      padding-bottom: 58px;
+    }
+
+    &--bottom {
+      display: flex;
+      padding-top: 35px;
+      padding-bottom: 30px;
+    }
   }
 
   @media (min-width: $desctop-width) {
-    margin-bottom: -295px;
+    &--top {
+      margin-bottom: -295px;
+    }
   }
 }

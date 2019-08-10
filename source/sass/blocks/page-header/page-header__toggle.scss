@@ -5,14 +5,14 @@
   background-color: transparent;
   border: none;
 
-  &--open {
-    background-image: url("/img/icon-mobile-menu.svg");
+  &--closed {
+    background-image: url("../img/icon-mobile-menu.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
-  &--close {
-    background-image: url("/img/icon-close.svg");
+  &--opened {
+    background-image: url("../img/icon-close.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }

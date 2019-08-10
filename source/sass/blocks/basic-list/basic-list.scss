@@ -7,10 +7,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 $tablet-edge-space;
   }
 
   @media (min-width: $desctop-width) {
-    padding: 0 110px;
+    padding: 0 $desctop-edge-space;
   }
 }

@@ -4,10 +4,10 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    width: (100%);
+    width: auto;
   }
 
   @media (min-width: $desctop-width) {
-    width: auto;
+    margin-right: auto;
   }
 }

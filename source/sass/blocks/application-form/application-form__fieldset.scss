@@ -5,34 +5,86 @@
 
   &--pet {
     &--diet {
+      margin-bottom: 23px;
       border: 1px solid $separating-line-color-light;
     }
 
     &--additional {
-      padding-top: 24px;
-      padding-bottom: 13px;
+      margin-bottom: 11px;
     }
   }
 
   &--person {
     &--contacts {
-      padding-top: 27px;
+      margin-bottom: 6px;
     }
 
     &--message {
-      padding-top: 6px;
+      margin: 0 20px 26px 20px;
     }
   }
 
   @media (min-width: $tablet-width) {
+    margin-left: $tablet-edge-space+40px;
+    margin-right: $tablet-edge-space+40px;
+
     &--pet {
       &--characteristics {
-        margin-bottom: 70px;
+        margin-bottom: 47px;
       }
 
       &--diet {
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-bottom: 78px;
+      }
+
+      &--additional {
+        margin-top: 20px;
+      }
+    }
+
+    &--person {
+      &--contacts {
+        padding-top: 35px;
+        margin-bottom: 40px;
+      }
+
+      &--message {
+        margin-bottom: 62px;
+      }
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-left: $desctop-edge-space;
+    margin-right: $desctop-edge-space;
+
+    &--pet {
+      &--characteristics {
+        display: inline-block;
+        margin-right: 75px;
+        margin-bottom: 45px;
+        width: (44%);
+      }
+
+      &--diet {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        margin-top: 25px;
+        margin-bottom: 45px;
+        padding-bottom: 7px;
+        width: (44%);
+      }
+
+      &--additional {
+        margin-top: 23px;
+        margin-bottom: 19px;
+      }
+    }
+
+    &--person {
+      &--contacts {
+        margin-bottom: 24px;
       }
     }
   }

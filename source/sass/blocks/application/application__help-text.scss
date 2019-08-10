@@ -1,6 +1,8 @@
 .application__help-text {
   margin: 0;
-  width: (85%);
+  margin-bottom: 18px;
+  padding-left: $mobile-edge-space;
+  width: (80%);
   font-family: $main-font, "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -8,10 +10,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-left: 40px;
-    margin-bottom: 67px;
+    margin-bottom: 41px;
+    padding-left: $tablet-edge-space+40px;
     width: 350px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-left: $desctop-edge-space;
   }
 }
