@@ -118,6 +118,7 @@ input[type="radio"].visually-hidden {
   }
 }
 
+
 .subtitle {
   display: flex;
   margin: 0;
@@ -147,7 +148,7 @@ input[type="radio"].visually-hidden {
     line-height: 36px;
 
     &::before {
-      content: "";
+       content: "";
       position: relative;
       left: -20px;
       top: 22px;
