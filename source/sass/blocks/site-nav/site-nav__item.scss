@@ -22,10 +22,6 @@
     &--active {
       border-bottom: 2px solid $common-color-one;
     }
-
-    &:first-child {
-    // margin-left: 0;
-    }
   }
 
   @media (min-width: $desctop-width) {
