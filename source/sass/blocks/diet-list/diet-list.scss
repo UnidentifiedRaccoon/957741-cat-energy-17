@@ -3,7 +3,7 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

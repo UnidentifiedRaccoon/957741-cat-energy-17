@@ -74,9 +74,9 @@ input[type="radio"].visually-hidden {
     padding: 0 $tablet-edge-space;
   }
 
-  @media (min-width: $desctop-width) {
-    width: $desctop-width;
-    padding: 0 $desctop-edge-space;
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0 $desktop-edge-space;
   }
 }
 
@@ -89,7 +89,7 @@ input[type="radio"].visually-hidden {
 //     padding: 0 30px;
 //   }
 //
-//   @media (min-width: $desctop-width) {
+//   @media (min-width: $desktop-width) {
 //     width: 1220px;
 //     padding: 0 110px;
 //   }
@@ -166,7 +166,7 @@ input[type="radio"].visually-hidden {
     }
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     &::before {
       width: 70px;
     }
@@ -232,6 +232,17 @@ input[type="radio"].visually-hidden {
 
 .map-block {
   display: block;
-  height: 362px;
+  width: 320px;
+  height: 360px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    object-fit: none;
+    width: 1440px;
+  }
 }
