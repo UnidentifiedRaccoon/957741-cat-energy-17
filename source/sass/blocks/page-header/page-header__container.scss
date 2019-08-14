@@ -1,19 +1,18 @@
 .page-header__container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     justify-content: flex-start;
     box-sizing: border-box;
     padding-right: $tablet-edge-space;
     padding-left: $tablet-edge-space;
   }
 
-  @media (min-width: $desctop-width) {
-    padding-right: $desctop-edge-space;
-    padding-left: $desctop-edge-space;
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    padding-right: $desktop-edge-space;
+    padding-left: $desktop-edge-space;
   }
 }

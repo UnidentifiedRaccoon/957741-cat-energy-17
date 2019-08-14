@@ -8,14 +8,14 @@
       background-repeat: no-repeat;
       background-position: 50% 0;
       /* По умолчанию показывается мобильный макет */
-      background-image: url("pixelglass_img/form-mobile.png");
+      background-image: url("pixelglass__img/form-mobile.png");
     }
 
     /* Планшет */
     @media (min-width: 768px) {
       HTML {
         /* Планшетный макет */
-        background-image: url("pixelglass_img/form-tablet.png");
+        background-image: url("pixelglass__img/form-tablet.png");
       }
     }
 
@@ -23,12 +23,12 @@
     @media (min-width: 1300px) {
       HTML {
         /* Десктопный макет */
-        background-image: url("pixelglass_img/form-desctop.png");
+        background-image: url("pixelglass__img/form-desctop.png");
       }
     }
   </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
+  <link href="pixelglass__img/pixel-glass/styles.css" rel="stylesheet">
+  <script src="pixelglass__img/pixel-glass/script.js"></script>
   <!-- // Pixel Glass -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -43,7 +43,11 @@
     <div class="container  page-header__container">
       <div class="page-header__top-wrap">
         <a class="page-header__logo-link" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-mobile-header.svg" alt="Логотип компании Кэт энерджи" width="191" height="39">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип компании Кэт энерджи" width="191" height="39">
+          </picture>
         </a>
       <button class="page-header__toggle  page-header__toggle--open" type="button">
         <span class="visually-hidden">Открывает или закрывает сайт-меню</span>
@@ -204,7 +208,11 @@
       </address>
     </div>
 
-    <img class="map-block" src="img/bg-map-mobile@1x.png" alt="Адрес компании ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
+    <picture>
+      <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+      <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+      <img class="map-block" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Адрес компании ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
+    </picture>
 
     <div class="container  page-footer__container  page-footer__container--bottom">
       <a class="page-footer__logo-link" href="index.html">
@@ -256,7 +264,7 @@
     </div>
   </footer>
 
-
+  <script src="js/some.js"></script>
 </body>
 
 </html>

@@ -54,9 +54,9 @@
     }
   }
 
-  @media (min-width: $desctop-width) {
-    margin-left: $desctop-edge-space;
-    margin-right: $desctop-edge-space;
+  @media (min-width: $desktop-width) {
+    margin-left: $desktop-edge-space;
+    margin-right: $desktop-edge-space;
 
     &--pet {
       &--characteristics {

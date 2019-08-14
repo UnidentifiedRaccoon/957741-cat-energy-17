@@ -13,6 +13,7 @@
     background-color: $common-color-one;
     background-repeat: no-repeat;
     background-position: 4px 6px;
+    background-size: 50px auto;
   }
 
   &--healthy::before {
@@ -31,6 +32,25 @@
     background-image: url("../img/advantage-clock@1x.png");
   }
 
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    &--healthy::before {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+
+    &--quickly::before {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
+
+    &--nourishingly::before {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
+
+    &--effective::before {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 245px;
     margin-right: auto;
@@ -39,6 +59,11 @@
 
     &:nth-child(odd) {
       margin-right: 140px;
+    }
+
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 0;
     }
 
     &::before {
@@ -60,29 +85,29 @@
     &--healthy::after {
       content: "1";
       top: 0;
-      right: 30px;
+      right: 15px;
     }
 
     &--quickly::after {
       content: "2";
       top: 0;
-      right: 15px;
+      right: 0;
     }
 
     &--nourishingly::after {
       content: "3";
       top: 0;
-      right: 10px;
+      right: 0;
     }
 
     &--effective::after {
       content: "4";
       top: 0;
-      right: 10px;
+      right: 0;
     }
   }
 
-  @media (min-width: $desctop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 70px;
     margin-right: auto;
 

@@ -43,7 +43,11 @@
     <div class="container  page-header__container">
       <div class="page-header__top-wrap">
         <a class="page-header__logo-link">
-          <img class="page-header__logo-image" src="img/logo-mobile-header.svg" alt="Логотип компании Кэт энерджи" width="191" height="39">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип компании Кэт энерджи" width="191" height="39">
+          </picture>
         </a>
         <button class="page-header__toggle  page-header__toggle--closed" type="button">
           <span class="visually-hidden">Открывает или закрывает сайт-меню</span>
@@ -156,10 +160,18 @@
         <div class="transformation  slider  life-example__slider">
           <ul class="transformation__list  slider__list">
             <li class="transformation__item  slider__item">
-              <img class="transformation__item-image  slider__item-image" src="img/before-mobile@1x.png" alt="Фото котика ДО диеты" width="311" height="232">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="transformation__item-image  slider__item-image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фото котика ДО диеты" width="311" height="232">
+              </picture>
             </li>
             <li class="transformation__item  slider__item">
-              <img class="transformation__item-image  slider__item-image" src="img/after-mobile@1x.png" alt="Фото котика ПОСЛЕ диеты" width="311" height="232">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="transformation__item-image  slider__item-image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Фото котика ПОСЛЕ диеты" width="311" height="232">
+              </picture>
             </li>
           </ul>
 
@@ -185,9 +197,12 @@
         <p class="company-address__text">ул. Большая Конюшенная, д. 19/8 <span class="company-address__town">Санкт-Петербург</span></p>
       </address>
     </div>
-    </div>
 
-    <img class="map-block" src="img/bg-map-mobile@1x.png" alt="Адрес компании ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
+    <picture>
+      <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+      <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+      <img class="map-block" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Адрес компании ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
+    </picture>
 
     <div class="container  page-footer__container  page-footer__container--bottom">
       <a class="page-footer__logo-link">
@@ -240,6 +255,7 @@
   </footer>
 
 
+  <script src="js/some.js"></script>
 </body>
 
 </html>

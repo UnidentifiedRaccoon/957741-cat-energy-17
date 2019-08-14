@@ -3,6 +3,11 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 67px;
     padding-bottom: 75px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
   }
 }

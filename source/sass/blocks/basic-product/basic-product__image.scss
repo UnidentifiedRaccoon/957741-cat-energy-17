@@ -1,0 +1,17 @@
+.basic-product__image {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 33px;
+
+    &--small {
+      padding-top: 39px;
+      width: auto;
+      height: 172px;
+    }
+
+    &--big {
+      padding-top: 3px;
+      width: auto;
+      height: 208px;
+    }
+  }
+}

@@ -4,5 +4,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    flex-grow: 0;
+    padding-top: 0;
   }
 }
