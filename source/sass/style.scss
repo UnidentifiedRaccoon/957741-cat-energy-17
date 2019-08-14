@@ -131,9 +131,14 @@
 @import "blocks/application-form/application-form__small-info.scss";
 //
 @import "blocks/radio/radio.scss";
+@import "blocks/radio/radio__text.scss";
 @import "blocks/radio/radio__box.scss";
 @import "blocks/radio/radio__input.scss";
-
+//
+@import "blocks/checkbox/checkbox.scss";
+@import "blocks/checkbox/checkbox__text.scss";
+@import "blocks/checkbox/checkbox__box.scss";
+@import "blocks/checkbox/checkbox__input.scss";
 //
 //
 @import "blocks/styles-for-pages/catalog-page__page-title-container.scss";
