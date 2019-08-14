@@ -6,11 +6,10 @@
     background-repeat: no-repeat;
     background-position: 103% top;
 
-    @media
-      (min-resolution: $retina-dpi),
+    @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg"),
-          linear-gradient(to right, #ffffff 50%, $common-color-one-dark 50%);
-      }
+      background-image: url("../img/index-background-desktop@2x.jpg"),
+        linear-gradient(to right, #ffffff 50%, $common-color-one-dark 50%);
+    }
   }
 }
