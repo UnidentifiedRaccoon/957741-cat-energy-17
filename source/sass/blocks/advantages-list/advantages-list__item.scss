@@ -1,6 +1,6 @@
 .advantages-list__item {
   position: relative;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   padding: 1px 1px 6px 80px;
 
   &::before {
@@ -117,6 +117,13 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:nth-last-child(1),
+    &:nth-last-child(2),
+    &:nth-last-child(3),
+    &:nth-last-child(4) {
+      margin-bottom: 0;
     }
   }
 }

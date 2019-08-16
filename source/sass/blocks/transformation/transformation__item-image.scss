@@ -1,0 +1,15 @@
+.transformation__item-image {
+  &--before {
+    padding-top: 10px;
+  }
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    height: auto;
+    padding-top: 1px;
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}

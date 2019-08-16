@@ -111,7 +111,7 @@
 
     <section class="advantages">
       <div class="container  advantages__container">
-        <h2 class="title-basis  section-title  advantages__title">Как это работает</h2>
+        <h2 class="title-basis  advantages__title">Как это работает</h2>
         <ul class="advantages-list  advantages__list">
           <li class="advantages-list__item  advantages-list__item--healthy">
             <p class="text-basis  advantages-list__item-text">
@@ -139,13 +139,14 @@
 
     <section class="life-example">
       <div class="container  life-example__container">
-        <h2 class="title-basis  section-title  life-example__title">Живой пример</h2>
+        <h2 class="title-basis life-example__title">Живой пример</h2>
         <p class="text-basis life-example__text">Борис сбросил 5 кг за 2 месяца,
           просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок!
           При этом он не менял своих привычек
           и по-прежнему спит по 16 часов в день.
         </p>
+        <div class="life-example__wrap">
         <ul class="stats-list  life-example__stats-list">
           <li class="stats-list__item">
             <span class="stats-list__value">5 кг</span>
@@ -156,31 +157,32 @@
             <span class="stats-list__tip">затрачено времени</span>
           </li>
         </ul>
-        <strong class="life-example__cost-text">Затраты на питание: 15 000 руб.</strong>
+        <strong class="life-example__cost-text">Затраты на питание: <span>15 000 руб.</span></strong>
+      </div>
         <div class="transformation  slider  life-example__slider">
           <ul class="transformation__list  slider__list">
             <li class="transformation__item  slider__item">
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img class="transformation__item-image  slider__item-image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фото котика ДО диеты" width="311" height="232">
+                <img class="transformation__item-image  transformation__item-image--before  slider__item-image" src="img/before-mobile1x.png" srcset="img/before-mobile2x.png 2x" alt="Фото котика ДО диеты" width="280" height="240">
               </picture>
             </li>
-            <li class="transformation__item  slider__item">
+            <!-- <li class="transformation__item  slider__item">
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img class="transformation__item-image  slider__item-image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Фото котика ПОСЛЕ диеты" width="311" height="232">
+                <img class="transformation__item-image  transformation__item-image--after  slider__item-image" src="img/after-mobile1x.png" srcset="img/after-mobile2x.png 2x" alt="Фото котика ПОСЛЕ диеты" width="280" height="240">
               </picture>
-            </li>
+            </li> -->
           </ul>
 
-          <div class="range  slider__range  transformation__range">
-            <button class="range__button  range__button--margin-fix  slider__range-button  transformation__range-button" type="button">Было</button>
-            <div class="range__scale  slider__range-scale  transformation__range-scale">
-              <div class="range__bar  slider__range-bar  transformation__range-bar"></div>
+          <div class="range  slider__range">
+            <button class="range__button  range__button--before  slider__range-button" type="button">Было</button>
+            <div class="range__scale  slider__range-scale">
+              <div class="range__bar  slider__range-bar"></div>
             </div>
-            <button class="range__button  slider__range-button  transformation__range-button" type="button">Стало</button>
+            <button class="range__button  range__button--after  slider__range-button" type="button">Стало</button>
           </div>
         </div>
       </div>

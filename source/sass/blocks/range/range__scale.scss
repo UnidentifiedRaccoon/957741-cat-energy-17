@@ -2,12 +2,37 @@
   position: relative;
   box-sizing: border-box;
   margin-top: 5px;
-  margin-left: 13px;
-  margin-right: 10px;
   padding: 3px;
-  width: (27%);
+  width: (30%);
   height: 14px;
   background-color: #ffffff;
   border: 1px solid $separating-line-color-dark;
   border-radius: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+    padding: 0;
+    width: (60%);
+    height: 6px;
+    background-color: $separating-line-color-dark;
+    border-radius: 2.5px;
+    border: none;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -11px;
+      left: (46.5%);
+      box-sizing: border-box;
+      width: 32px;
+      height: 32px;
+      background-color: $common-color-one;
+      border: 12px solid #ffffff;
+      border-radius: (50%);
+      box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: (66%);
+  }
 }

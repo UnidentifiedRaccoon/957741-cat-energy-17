@@ -1,4 +1,13 @@
 .life-example__text {
   margin-right: 5px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+    margin-bottom: 68px;
+  }
 }

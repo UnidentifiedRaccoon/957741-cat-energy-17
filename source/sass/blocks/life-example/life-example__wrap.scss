@@ -1,0 +1,12 @@
+.life-example__wrap {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 430px;
+  }
+}
