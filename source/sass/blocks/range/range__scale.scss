@@ -17,6 +17,7 @@
     background-color: $separating-line-color-dark;
     border-radius: 2.5px;
     border: none;
+
     &::before {
       content: "";
       position: absolute;
@@ -28,7 +29,7 @@
       background-color: $common-color-one;
       border: 12px solid #ffffff;
       border-radius: (50%);
-      box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     }
   }
 

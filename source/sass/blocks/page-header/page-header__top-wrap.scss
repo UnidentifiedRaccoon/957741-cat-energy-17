@@ -1,7 +1,7 @@
 .page-header__top-wrap {
   display: flex;
   flex-grow: 1;
-  padding: 11px $mobile-edge-space;
+  padding: 12px $mobile-edge-space;
   border-bottom: 1px solid $separating-line-color-light;
 
   @media (min-width: $tablet-width) {
