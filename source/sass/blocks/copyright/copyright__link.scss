@@ -2,4 +2,14 @@
   display: flex;
   justify-content: space-between;
   padding: 22px 0;
+
+  &:hover,
+  &:focus {
+    color: $common-color-one;
+  }
+
+  &:active {
+    color: $common-color-one;
+    opacity: 0.3;
+  }
 }
