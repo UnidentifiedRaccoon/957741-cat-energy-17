@@ -33,6 +33,7 @@
   &:focus {
     border-color: $text-color-light;
     outline: none;
+
     & ~ .application-form__icon {
       color: $common-color-one;
     }
