@@ -2,15 +2,15 @@
   &--top {
     display: flex;
     justify-content: space-between;
-    padding-top: 27px;
-    padding-bottom: 23px;
+    padding-top: 30px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: $tablet-width) {
     &--top {
       padding: 0 70px;
-      padding-top: 62px;
-      padding-bottom: 58px;
+      padding-top: 65px;
+      padding-bottom: 55px;
     }
 
     &--bottom {
@@ -22,7 +22,12 @@
 
   @media (min-width: $desktop-width) {
     &--top {
-      margin-bottom: -295px;
+      position: absolute;
+      top: 100px;
+      left: calc(50% - 610px);
+      padding: 60px 75px;
+      max-width: 570px;
+      background-color: #ffffff;
     }
   }
 }

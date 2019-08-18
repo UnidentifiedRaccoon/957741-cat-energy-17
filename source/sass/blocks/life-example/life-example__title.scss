@@ -1,3 +1,13 @@
 .life-example__title {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 600px;
+    margin-top: 55px;
+    margin-bottom: 145px;
+  }
 }

@@ -1,3 +1,11 @@
 .application {
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 60px;
+  }
 }

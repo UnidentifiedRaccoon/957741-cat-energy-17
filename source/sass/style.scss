@@ -38,8 +38,10 @@
 @import "blocks/advantages-list/advantages-list__item-text.scss";
 //
 @import "blocks/life-example/life-example.scss";
+@import "blocks/life-example/life-example__container.scss";
 @import "blocks/life-example/life-example__title.scss";
 @import "blocks/life-example/life-example__text.scss";
+@import "blocks/life-example/life-example__wrap.scss";
 @import "blocks/life-example/life-example__cost-text.scss";
 //
 @import "blocks/stats-list/stats-list.scss";
@@ -47,8 +49,10 @@
 @import "blocks/stats-list/stats-list__value.scss";
 @import "blocks/stats-list/stats-list__tip.scss";
 //
+@import "blocks/transformation/transformation.scss";
 @import "blocks/transformation/transformation__list.scss";
 @import "blocks/transformation/transformation__item.scss";
+@import "blocks/transformation/transformation__item-image.scss";
 //
 @import "blocks/range/range.scss";
 @import "blocks/range/range__scale.scss";
@@ -124,16 +128,23 @@
 @import "blocks/application-form/application-form__list.scss";
 @import "blocks/application-form/application-form__item.scss";
 @import "blocks/application-form/application-form__label.scss";
+@import "blocks/application-form/application-form__text-label.scss";
 @import "blocks/application-form/application-form__input.scss";
+@import "blocks/application-form/application-form__icon.scss";
 @import "blocks/application-form/application-form__message.scss";
 @import "blocks/application-form/application-form__bottom-wrap.scss";
 @import "blocks/application-form/application-form__submit-button.scss";
 @import "blocks/application-form/application-form__small-info.scss";
 //
 @import "blocks/radio/radio.scss";
+@import "blocks/radio/radio__text.scss";
 @import "blocks/radio/radio__box.scss";
 @import "blocks/radio/radio__input.scss";
-
+//
+@import "blocks/checkbox/checkbox.scss";
+@import "blocks/checkbox/checkbox__text.scss";
+@import "blocks/checkbox/checkbox__box.scss";
+@import "blocks/checkbox/checkbox__input.scss";
 //
 //
 @import "blocks/styles-for-pages/catalog-page__page-title-container.scss";

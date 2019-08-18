@@ -1,0 +1,7 @@
+.checkbox__text {
+  padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+  }
+}

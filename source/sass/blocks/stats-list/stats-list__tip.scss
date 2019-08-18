@@ -11,4 +11,14 @@
   color: $text-color-light;
   text-align: center;
   background-color: $common-color-two;
+
+  @media (min-width: $tablet-width) {
+    top: (89%);
+    left: (5%);
+    max-width: (90%);
+    padding: 0 9px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
 }

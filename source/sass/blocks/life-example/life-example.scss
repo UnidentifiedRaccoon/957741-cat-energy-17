@@ -3,7 +3,16 @@
   padding-bottom: 35px;
   background-color: $common-color-two;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 68px;
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff 57.5%, transparent 57.5%),
+      linear-gradient(to right, $common-color-two 50%, #ededed 50%);
+  }
+
   @media (min-width: $desktop-width) {
-    padding-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 35px;
   }
 }

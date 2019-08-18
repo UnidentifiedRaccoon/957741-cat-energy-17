@@ -1,0 +1,7 @@
+.radio__text {
+  padding-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+}

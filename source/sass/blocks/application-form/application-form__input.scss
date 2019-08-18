@@ -16,18 +16,10 @@
 
   &--email {
     padding-right: 35px;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: (93%) center;
-    background-size: 18px 14px;
   }
 
   &--tel {
     padding-right: 35px;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: (93%) center;
-    background-size: 21px 21px;
   }
 
   &--error {
@@ -41,17 +33,17 @@
   &:focus {
     border-color: $text-color-light;
     outline: none;
+
+    & ~ .application-form__icon {
+      color: $common-color-one;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    padding: 11px 10px 10px 21px;
-
-    &--email {
-      background-position: (97%) 20px;
-    }
+    padding: 10px 10px 10px 21px;
 
     &--tel {
-      background-position: (97%) 15px;
+      padding-left: 17px;
     }
   }
 }

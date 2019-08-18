@@ -1,9 +1,18 @@
 .page-footer__logo-link {
   display: block;
-  padding-top: 40px;
+  padding-top: 41px;
   padding-bottom: 28px;
   text-align: center;
   border-bottom: 1px solid $separating-line-color-dark;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;

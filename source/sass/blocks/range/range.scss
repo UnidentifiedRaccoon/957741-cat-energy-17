@@ -1,4 +1,7 @@
 .range {
   display: flex;
-  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 40px;
+  }
 }

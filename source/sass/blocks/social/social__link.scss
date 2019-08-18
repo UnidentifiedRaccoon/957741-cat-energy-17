@@ -20,4 +20,48 @@
     width: 24px;
     height: 24px;
   }
+
+  &:hover,
+  &:focus {
+    color: $common-color-one;
+  }
+
+  &:active {
+    color: $common-color-one;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 30px;
+
+      & svg {
+        width: 30px;
+        height: 16px;
+      }
+    }
+
+    &--insta {
+      margin-top: 4px;
+      width: 30px;
+      height: 30px;
+
+      & svg {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &--fb {
+      margin-top: 2px;
+      width: 30px;
+      height: 30px;
+
+      & svg {
+        width: 14px;
+        height: 28px;
+      }
+    }
+  }
 }
