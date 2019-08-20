@@ -5,6 +5,10 @@
   background-color: transparent;
   border: none;
 
+  &--nojs {
+    display: none;
+  }
+
   &--closed {
     background-image: url("../img/icon-mobile-menu.svg");
     background-repeat: no-repeat;

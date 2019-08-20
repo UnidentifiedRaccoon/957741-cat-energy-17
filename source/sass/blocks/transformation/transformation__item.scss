@@ -1,3 +1,7 @@
 .transformation__item {
   position: absolute;
+  display: none;
+  &--active {
+    display: inline-block;
+  }
 }

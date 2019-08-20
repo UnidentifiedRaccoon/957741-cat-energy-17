@@ -5,6 +5,7 @@
     url("../fonts/oswaldregular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
     url("../fonts/oswaldmedium.woff") format("woff");
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
 }
 
 body {
@@ -227,22 +229,5 @@ input[type="radio"].visually-hidden {
     padding-right: 25px;
     font-size: 20px;
     line-height: 20px;
-  }
-}
-
-.map-block {
-  display: block;
-  width: 320px;
-  height: 360px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    height: 400px;
-  }
-
-  @media (min-width: $desktop-width) {
-    object-fit: none;
-    width: 1440px;
   }
 }

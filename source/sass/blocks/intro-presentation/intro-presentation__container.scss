@@ -8,7 +8,7 @@
     linear-gradient(to bottom, $common-color-one 60%, #ffffff 60%);
   background-repeat: no-repeat, no-repeat;
   background-position: center 167px, center 0, 0 0;
-  background-size: 280px auto, 320px auto;
+  background-size: 280px auto, 320px auto, auto;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {

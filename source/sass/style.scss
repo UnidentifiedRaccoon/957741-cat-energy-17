@@ -54,6 +54,8 @@
 @import "blocks/transformation/transformation__item.scss";
 @import "blocks/transformation/transformation__item-image.scss";
 //
+@import "blocks/slider/slider__item.scss";
+//
 @import "blocks/range/range.scss";
 @import "blocks/range/range__scale.scss";
 @import "blocks/range/range__bar.scss";
@@ -70,6 +72,10 @@
 @import "blocks/company-address/company-address.scss";
 @import "blocks/company-address/company-address__text.scss";
 @import "blocks/company-address/company-address__town.scss";
+//
+@import "blocks/map-block/map-block.scss";
+@import "blocks/map-block/map-block__interactive.scss";
+@import "blocks/map-block/map-block__img.scss";
 //
 @import "blocks/social/social__list.scss";
 @import "blocks/social/social__item.scss";
