@@ -1,7 +1,7 @@
 .diet-list__item {
   position: relative;
   margin-bottom: 20px;
-  padding: 31px 20px 0 20px;
+  padding: 29px 20px 0 20px;
   background-color: $common-color-two;
 
   &::before {
@@ -41,7 +41,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
-    padding: 76px 0 41px 53px;
+    padding: 74px 0 41px 53px;
 
     &::before {
       top: 92px;

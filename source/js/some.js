@@ -50,3 +50,29 @@ if (body.classList.contains("index-page")) {
     slider__item_before.classList.remove("slider__item--active-js");
   });
 }
+
+var map;
+var marker;
+var infowindow;
+var coordinates = {lat: 59.938743, lng: 30.323037};
+var zoom = 17;
+var image = "../img/map-pin.png";
+var popupContent = "<p class='company-address__text'>ул. Большая Конюшенная, д. 19/8 <span class='company-address__town'>Санкт-Петербург</span></p>"
+  function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: coordinates,
+    zoom: zoom,
+  }),
+  marker = new google.maps.Marker({
+     position: coordinates,
+     map: map,
+     icon: image
+ }),
+  infowindow = new google.maps.InfoWindow({
+    content: popupContent
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+  map.panBy(100px, 0);
+}

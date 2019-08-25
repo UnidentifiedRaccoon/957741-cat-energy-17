@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
     flex-direction: column;
-    padding: 0 38px 38px 38px;
+    padding: 0 38px 41px 38px;
     width: 325px;
     min-height: 516px;
     background-color: $common-color-two;
@@ -17,5 +17,6 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding-bottom: 39px;
   }
 }

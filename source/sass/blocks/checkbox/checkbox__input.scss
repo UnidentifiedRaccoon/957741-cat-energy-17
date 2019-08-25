@@ -1,20 +1,22 @@
 .checkbox__input {
-  &:focus ~ .checkbox__box::before {
+  &:focus ~ .checkbox__label::before {
     border-color: #bababa;
   }
 
   &:checked {
-    & ~ .checkbox__box::after {
+    & ~ .checkbox__label::after {
       display: block;
     }
   }
 
   &:disabled {
-    & ~ .checkbox__box,
-    & ~ .checkbox__text {
+    & ~ .checkbox__label {
       opacity: 0.3;
       user-select: none;
       cursor: not-allowed;
+      &:hover::before {
+        border-color: $separating-line-color-light;
+      }
     }
   }
 }

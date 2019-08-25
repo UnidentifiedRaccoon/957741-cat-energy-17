@@ -40,15 +40,19 @@ gulp.task("html", function () {
     include()
   ]))
   .pipe(htmlmin({ collapseWhitespace: true }))
-  // .pipe(rename("*-min.html"))
+  .pipe(rename(function (path) {
+    path.basename += "-min";
+  }))
   .pipe(gulp.dest("build"));
 });
 
 // для js
 gulp.task("js", function () {
   return gulp.src("source/js/**/*.js")
-  .pipe(uglify())
-  // .pipe(rename("*-min.js"))
+  // .pipe(uglify())
+  .pipe(rename(function (path) {
+    path.basename += "-min";
+  }))
   .pipe(gulp.dest("build/js"));
 });
 
@@ -59,7 +63,8 @@ gulp.task("server", function () {
     notify: false,
     open: true,
     cors: true,
-    ui: false
+    ui: false,
+    index: "index-min.html"
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
