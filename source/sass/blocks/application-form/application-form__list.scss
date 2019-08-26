@@ -1,11 +1,24 @@
 .application-form__list {
   margin: 0;
-  padding: 21px $mobile-edge-space 22px $mobile-edge-space;
+  padding: 21px $mobile-edge-space 21px $mobile-edge-space;
   list-style: none;
+
+  &--diet {
+    border: 1px solid $separating-line-color-light;
+  }
+
+  &--contacts {
+    padding-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 22px 0 30px 0;
     width: auto;
+
+
+    &--contacts {
+      padding-bottom: 0;
+    }
 
     &--additional {
       display: flex;

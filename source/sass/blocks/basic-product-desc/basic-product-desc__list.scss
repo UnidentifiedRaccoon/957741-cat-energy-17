@@ -2,4 +2,8 @@
   margin-top: 8px;
   width: (100%);
   border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }

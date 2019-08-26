@@ -1,8 +1,9 @@
-.radio__box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 0;
+.radio__label {
+  position: relative;
+  margin: 0;
+  padding-left: 45px;
+  padding-top: 6px;
+  padding-bottom: 7px;
 
   &::before {
     content: "";
@@ -28,7 +29,16 @@
     border-radius: 50%;
   }
 
+  &:hover::before {
+    border-color: #bababa;
+  }
+
   @media (min-width: $tablet-width) {
+    margin-left: 28px;
+    padding-left: 60px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+
     &::before {
       top: 0;
       left: 0;

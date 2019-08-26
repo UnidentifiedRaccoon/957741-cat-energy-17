@@ -7,10 +7,12 @@
   border: solid 1px $separating-line-color-light;
 
   &::placeholder {
+    opacity: 1;
     color: $text-color-light; //Для современных браузеров
   }
 
   &:-moz-placeholder {
+    opacity: 1;
     color: $text-color-light; //Для Firefox с версии 4 и до 19
   }
 
@@ -22,9 +24,6 @@
     padding-right: 35px;
   }
 
-  &--error {
-    border-color: $error-color;
-  }
 
   &:hover {
     border-color: $separating-line-color-dark;
@@ -32,10 +31,23 @@
 
   &:focus {
     border-color: $text-color-light;
-    outline: none;
+    outline: 2px solid $text-color-light;
 
     & ~ .application-form__icon {
       color: $common-color-one;
+    }
+  }
+
+  &--error {
+    border-color: $error-color;
+    outline: 1px solid $error-color;
+
+    &:hover {
+      border-color: $error-color;
+    }
+
+    &:focus {
+      outline: 2px solid $error-color;
     }
   }
 

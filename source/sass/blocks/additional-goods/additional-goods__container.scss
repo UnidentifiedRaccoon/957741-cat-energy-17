@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;

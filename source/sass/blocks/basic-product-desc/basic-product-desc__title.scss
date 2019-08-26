@@ -15,14 +15,10 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 9px;
     font-size: 20px;
+    margin-bottom: 13px;
     width: auto;
     max-width: 150px;
     text-align: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 7px;
   }
 }

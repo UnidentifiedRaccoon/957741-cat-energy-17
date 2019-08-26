@@ -7,12 +7,13 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 140px;
-    padding: 55px 38px 40px 38px;
+    padding: 55px 38px 37px 38px;
     box-sizing: border-box;
     width: 325px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding-bottom: 37px;
   }
 }

@@ -54,6 +54,8 @@
 @import "blocks/transformation/transformation__item.scss";
 @import "blocks/transformation/transformation__item-image.scss";
 //
+@import "blocks/slider/slider__item.scss";
+//
 @import "blocks/range/range.scss";
 @import "blocks/range/range__scale.scss";
 @import "blocks/range/range__bar.scss";
@@ -71,6 +73,10 @@
 @import "blocks/company-address/company-address__text.scss";
 @import "blocks/company-address/company-address__town.scss";
 //
+@import "blocks/map-block/map-block.scss";
+@import "blocks/map-block/map-block__interactive.scss";
+@import "blocks/map-block/map-block__img.scss";
+//
 @import "blocks/social/social__list.scss";
 @import "blocks/social/social__item.scss";
 @import "blocks/social/social__link.scss";
@@ -79,6 +85,7 @@
 @import "blocks/copyright/copyright__link-text.scss";
 //
 //
+@import "blocks/basic-goods/basic-goods.scss";
 @import "blocks/basic-goods/basic-goods__container.scss";
 //
 @import "blocks/basic-list/basic-list.scss";
@@ -123,6 +130,7 @@
 @import "blocks/application/application__help-text.scss";
 @import "blocks/application/application__container.scss";
 //
+@import "blocks/application-form/application-form__top-container.scss";
 @import "blocks/application-form/application-form__fieldset.scss";
 @import "blocks/application-form/application-form__fieldset-title.scss";
 @import "blocks/application-form/application-form__list.scss";
@@ -136,14 +144,10 @@
 @import "blocks/application-form/application-form__submit-button.scss";
 @import "blocks/application-form/application-form__small-info.scss";
 //
-@import "blocks/radio/radio.scss";
-@import "blocks/radio/radio__text.scss";
-@import "blocks/radio/radio__box.scss";
+@import "blocks/radio/radio__label.scss";
 @import "blocks/radio/radio__input.scss";
 //
-@import "blocks/checkbox/checkbox.scss";
-@import "blocks/checkbox/checkbox__text.scss";
-@import "blocks/checkbox/checkbox__box.scss";
+@import "blocks/checkbox/checkbox__label.scss";
 @import "blocks/checkbox/checkbox__input.scss";
 //
 //

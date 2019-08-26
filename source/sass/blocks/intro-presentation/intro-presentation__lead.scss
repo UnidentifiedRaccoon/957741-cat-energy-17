@@ -11,9 +11,19 @@
   text-align: center;
   text-transform: uppercase;
 
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* стили только для IE10 и IE11 */
+    margin-bottom: 300px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: $text-color-dark;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      /* стили только для IE10 и IE11 */
+      margin-bottom: 30px;
+    }
   }
 }

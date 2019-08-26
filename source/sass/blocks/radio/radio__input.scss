@@ -1,20 +1,23 @@
 .radio__input {
-  &:focus ~ .radio__box::before {
+  &:focus ~ .radio__label::before {
     border-color: #bababa;
   }
 
   &:checked {
-    & ~ .radio__box::after {
+    & ~ .radio__label::after {
       display: block;
     }
   }
 
   &:disabled {
-    & ~ .radio__box,
-    & ~ .radio__text {
+    & ~ .radio__label {
       opacity: 0.3;
-      user-select: none;
       cursor: not-allowed;
+      user-select: none;
+
+      &:hover::before {
+        border-color: $separating-line-color-light;
+      }
     }
   }
 }
