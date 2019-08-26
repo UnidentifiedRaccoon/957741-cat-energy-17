@@ -28,10 +28,10 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 
 if (body.classList.contains("index-page")) {
   var slider = document.querySelector(".slider");
-  var slider__btn_before = slider.querySelector(".slider__btn--before-js");
-  var slider__btn_after = slider.querySelector(".slider__btn--after-js");
-  var slider__item_before = slider.querySelector(".slider__item--before-js");
-  var slider__item_after = slider.querySelector(".slider__item--after-js");
+  var slider__btn_before = slider.querySelector(".slider__btn-before-js");
+  var slider__btn_after = slider.querySelector(".slider__btn-after-js");
+  var slider__item_before = slider.querySelector(".slider__item-before-js");
+  var slider__item_after = slider.querySelector(".slider__item-after-js");
 
 
   if (slider__item_before.classList.contains("transformation__item--active")) {
@@ -40,39 +40,67 @@ if (body.classList.contains("index-page")) {
 
   slider__btn_before.addEventListener("click", function(evt) {
     evt.preventDefault();
-    slider__item_before.classList.add("slider__item--active-js");
-    slider__item_after.classList.remove("slider__item--active-js");
+    slider__item_before.classList.add("slider__item-active-js");
+    slider__item_after.classList.remove("slider__item-active-js");
   });
 
   slider__btn_after.addEventListener("click", function(evt) {
     evt.preventDefault();
-    slider__item_after.classList.add("slider__item--active-js");
-    slider__item_before.classList.remove("slider__item--active-js");
+    slider__item_after.classList.add("slider__item-active-js");
+    slider__item_before.classList.remove("slider__item-active-js");
+  });
+}
+
+if (body.classList.contains("form-page")) {
+  var form = document.querySelector(".application-form");
+  var personTel = form.querySelector(".application-form__input--tel");
+  var personEmail = form.querySelector(".application-form__input--email");
+
+  form.addEventListener("submit", function(evt) {
+    if (!personTel.value) {
+      evt.preventDefault();
+      console.log("Нужно ввести tel");
+      personTel.classList.add("application-form__input--error");
+    } else {
+      personTel.classList.remove("application-form__input--error");
+    }
+    if (!personEmail.value) {
+      evt.preventDefault();
+      console.log("Нужно ввести email");
+      personEmail.classList.add("application-form__input--error");
+    } else {
+      personEmail.classList.remove("application-form__input--error");
+    }
   });
 }
 
 var map;
 var marker;
-var infowindow;
-var coordinates = {lat: 59.938743, lng: 30.323037};
+var infoWindow;
+var centerCoordinates;
+if (window.matchMedia("(min-width: 1300px)").matches) {
+  centerCoordinates = {lat: 59.938846, lng: 30.319333};
+} else {
+  centerCoordinates = {lat: 59.938743, lng: 30.323037};
+}
+var positionCoordinates = {lat: 59.938743, lng: 30.323037};
 var zoom = 17;
 var image = "../img/map-pin.png";
 var popupContent = "<p class='company-address__text'>ул. Большая Конюшенная, д. 19/8 <span class='company-address__town'>Санкт-Петербург</span></p>"
   function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: coordinates,
-    zoom: zoom,
+    center: centerCoordinates,
+    zoom: zoom
   }),
   marker = new google.maps.Marker({
-     position: coordinates,
+     position: positionCoordinates,
      map: map,
      icon: image
  }),
-  infowindow = new google.maps.InfoWindow({
+  infoWindow = new google.maps.InfoWindow({
     content: popupContent
   });
   marker.addListener('click', function() {
-    infowindow.open(map, marker);
+    infoWindow.open(map, marker);
   });
-  map.panBy(100px, 0);
 }

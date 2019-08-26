@@ -49,7 +49,7 @@ gulp.task("html", function () {
 // для js
 gulp.task("js", function () {
   return gulp.src("source/js/**/*.js")
-  // .pipe(uglify())
+  .pipe(uglify())
   .pipe(rename(function (path) {
     path.basename += "-min";
   }))
@@ -70,7 +70,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-s-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
-  gulp.watch("source/js/**/*.js", gulp.series("js", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("js", "refresh"));
 
 });
 

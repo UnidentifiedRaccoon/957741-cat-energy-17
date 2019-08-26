@@ -1,0 +1,8 @@
+.application-form__top-container {
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+
+  }
+}

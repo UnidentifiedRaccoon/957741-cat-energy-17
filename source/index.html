@@ -52,7 +52,7 @@
       <div class="container  intro-presentation__container">
         <h1 class="title-basis  main-page-title  intro-presentation__title">Функциональное питание для котов</h1>
         <strong class="intro-presentation__lead">Занялся собой? Займись котом!</strong>
-        <a class="link-btn  intro-presentation__link" href="#">Подобрать программу</a>
+        <a class="link-btn  intro-presentation__link" href="form-min.html">Подобрать программу</a>
       </div>
     </section>
 
@@ -138,7 +138,7 @@
         </div>
         <div class="transformation  slider  life-example__slider">
           <ul class="transformation__list  slider__list">
-            <li class="transformation__item  transformation__item--active  slider__item--before-js  slider__item--active-js">
+            <li class="transformation__item  transformation__item--active  slider__item-before-js  slider__item-active-js">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
@@ -149,7 +149,7 @@
                 <img class="transformation__item-image  transformation__item-image--before  slider__item-image" src="img/before-mobile1x.png" srcset="img/before-mobile2x.png 2x" alt="Фото котика ДО диеты" width="280" height="240">
               </picture>
             </li>
-            <li class="transformation__item  slider__item--after-js">
+            <li class="transformation__item  slider__item-after-js">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
@@ -163,11 +163,11 @@
           </ul>
 
           <div class="range  slider__range">
-            <button class="range__button  range__button--before  slider__btn--before-js" type="button">Было</button>
+            <button class="range__button  range__button--before  slider__btn-before-js" type="button">Было</button>
             <div class="range__scale  slider__range-scale">
               <div class="range__bar  slider__range-bar"></div>
             </div>
-            <button class="range__button  range__button--after  slider__btn--after-js" type="button">Стало</button>
+            <button class="range__button  range__button--after  slider__btn-after-js" type="button">Стало</button>
           </div>
         </div>
       </div>
@@ -230,8 +230,13 @@
     </div>
   </footer>
 
-  <script src="js/some.js"></script>
+  <script src="js/some-min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZMkvYYo0pA0Lmm5I7Jyb5vvRnvy5DBPY&callback=initMap" async defer></script>
+  <script>
+  // Picture element HTML5 shiv
+  document.createElement( "picture" );
+</script>
+<script src="js/picturefill-min.js" async></script>
 </body>
 
 </html>

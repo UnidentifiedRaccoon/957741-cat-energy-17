@@ -82,21 +82,6 @@ input[type="radio"].visually-hidden {
   }
 }
 
-// .inner {
-//   width: 280px;
-//   padding: 0 20px;
-//
-//   @media (min-width: $tablet-width) {
-//     width: 708px;
-//     padding: 0 30px;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     width: 1220px;
-//     padding: 0 110px;
-//   }
-// }
-
 .title-basis {
   margin: 0;
   font: {
@@ -121,60 +106,79 @@ input[type="radio"].visually-hidden {
   }
 }
 
-
 .subtitle {
-  display: flex;
-  margin: 0;
-  padding-left: $mobile-edge-space;
   position: relative;
-  font: {
-    family: $main-font, "Arial", sans-serif;
-    size: 24px;
-    weight: 400;
-  }
-  line-height: 24px;
-  color: #111111;
 
-  &::after {
-    content: "";
-    position: relative;
-    top: 12px;
-    flex-grow: 1;
-    margin-left: 24px;
-    min-width: 20px;
+  .container {
+    display: flex;
+    padding-left: 0;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: 40px;
+    width: 100%;
     height: 3px;
     background-color: $common-color-one;
+    z-index: -1;
+  }
+
+  &__text {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: $mobile-edge-space;
+    padding-right: 23px;
+    margin: 0;
+
+    font: {
+      family: $main-font, "Arial", sans-serif;
+      size: 24px;
+      weight: 400;
+    }
+
+    line-height: 24px;
+    color: #111111;
+    background-color: #fff;
+    &--catalog {
+      padding-bottom: 35px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: $mobile-edge-space+2px;
-    font-size: 36px;
-    line-height: 36px;
-
-    &::before {
-      content: "";
-      position: relative;
-      left: -20px;
-      top: 22px;
-      margin-right: 17px;
-      width: 30px;
-      height: 3px;
-      background-color: $common-color-one;
+    .container {
+      padding-left: $tablet-edge-space;
     }
 
     &::after {
-      top: 22px;
-      margin-left: 35px;
-      min-width: 20px;
+      top: 87px;
+    }
+
+    &__text {
+      padding-top: 65px;
+      padding-bottom: 50px;
+      padding-left: 39px;
+      padding-right: 35px;
+      font-size: 36px;
+      line-height: 36px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    &::before {
-      width: 70px;
+    .container {
+      padding-left: 2px;
+    }
+
+    &::after {
+      top: 65px;
+    }
+
+    &__text {
+      padding-top: 42px;
     }
   }
 }
+
 
 .text-basis {
   margin: 0;

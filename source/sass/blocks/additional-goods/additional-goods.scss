@@ -1,14 +1,11 @@
 .additional-goods {
-  padding-top: 27px;
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 67px;
     padding-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 80px;
     padding-bottom: 86px;
   }
 }

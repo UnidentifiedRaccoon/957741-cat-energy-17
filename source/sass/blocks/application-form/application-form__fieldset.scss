@@ -1,12 +1,10 @@
 .application-form__fieldset {
-  margin: 0;
   padding: 0;
   border: none;
 
   &--pet {
     &--diet {
-      margin-bottom: 25px;
-      border: 1px solid $separating-line-color-light;
+      margin-bottom: 2px;
     }
 
     &--additional {
@@ -16,25 +14,24 @@
 
   &--person {
     &--contacts {
-      margin-bottom: 6px;
+      margin-bottom: 3px;
     }
 
     &--message {
-      margin: 0 20px 23px 20px;
+      padding: 0 20px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: $tablet-edge-space+40px;
-    margin-right: $tablet-edge-space+40px;
-
+    padding-right: $tablet-edge-space + 40px;
+    padding-left: $tablet-edge-space + 40px;
     &--pet {
       &--characteristics {
         margin-bottom: 45px;
       }
 
       &--diet {
-        margin-bottom: 75px;
+        margin-bottom: 11px;
       }
 
       &--additional {
@@ -45,36 +42,33 @@
     &--person {
       &--contacts {
         padding-top: 40px;
-        margin-bottom: 37px;
       }
 
       &--message {
-        margin-top: 62px;
-        margin-bottom: 62px;
+        margin-top: 60px;
+        font-size: 0;
       }
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: $desktop-edge-space;
-    margin-right: $desktop-edge-space;
+    padding-left: $desktop-edge-space;
+    padding-right: $desktop-edge-space;
 
     &--pet {
       &--characteristics {
-        display: inline-block;
         margin-right: 75px;
-        margin-bottom: 41px;
-        width: (44%);
+        padding-right: 0;
+        margin-bottom: 0;
+        width: (47%);
       }
 
       &--diet {
-        display: inline-block;
-        vertical-align: top;
         margin: 0;
         margin-top: 25px;
-        margin-bottom: 45px;
         padding-bottom: 7px;
-        width: (44%);
+        padding-left: 0;
+        width: (47%);
       }
 
       &--additional {
@@ -85,7 +79,12 @@
 
     &--person {
       &--contacts {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
+      }
+
+      &--message {
+        margin-top: 65px;
+        margin-bottom: 23px;
       }
     }
   }

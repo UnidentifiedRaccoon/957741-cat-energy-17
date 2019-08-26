@@ -1,14 +1,14 @@
 .application-form__bottom-wrap {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 $mobile-edge-space;
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
-    margin: 0 $tablet-edge-space+40px 22px $tablet-edge-space+40px;
+    padding-right: $tablet-edge-space + 40px;
+    padding-left: $tablet-edge-space + 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 $desktop-edge-space;
+    padding-left: $desktop-edge-space;
   }
 }

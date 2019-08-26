@@ -326,8 +326,10 @@
 
     <!-- Блок дополнительных товаров -->
     <section class="additional-goods">
-      <div class="container  additional-goods__title-container">
-        <h2 class="subtitle  additional-goods__title">Дополнительные товары</h2>
+      <div class="subtitle">
+        <div class="container">
+          <h2 class="subtitle__text  subtitle__text--catalog">Дополнительные товары</h2>
+        </div>
       </div>
       <!-- Список дополнительных товаров -->
       <div class="container  additional-goods__container">
@@ -440,8 +442,13 @@
     </div>
   </footer>
 
-  <script src="js/some.js"></script>
+  <script src="js/some-min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZMkvYYo0pA0Lmm5I7Jyb5vvRnvy5DBPY&callback=initMap" async defer></script>
+  <script>
+  // Picture element HTML5 shiv
+  document.createElement( "picture" );
+</script>
+<script src="js/picturefill-min.js" async></script>
 </body>
 
 </html>
