@@ -14,6 +14,7 @@
       opacity: 0.3;
       user-select: none;
       cursor: not-allowed;
+
       &:hover::before {
         border-color: $separating-line-color-light;
       }

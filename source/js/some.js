@@ -93,10 +93,10 @@ var popupContent = "<p class='company-address__text'>ул. Большая Кон
     zoom: zoom
   }),
   marker = new google.maps.Marker({
-     position: positionCoordinates,
-     map: map,
-     icon: image
- }),
+      position: positionCoordinates,
+      map: map,
+      icon: image
+  }),
   infoWindow = new google.maps.InfoWindow({
     content: popupContent
   });
