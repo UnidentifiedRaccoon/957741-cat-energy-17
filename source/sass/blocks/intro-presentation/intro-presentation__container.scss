@@ -42,9 +42,28 @@
     background-position: (65%) 0;
     background-size: 550px auto;
 
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      min-height: 696px;
+      background-color: $common-color-one;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+      z-index: -10;
+    }
+
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
       background-image: url("../img/intro-pack-image-desktop@2x.png");
+
+      &::after {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }

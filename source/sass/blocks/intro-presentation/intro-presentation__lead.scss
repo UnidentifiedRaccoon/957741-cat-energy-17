@@ -19,6 +19,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    width: 300px;
     color: $text-color-dark;
 
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

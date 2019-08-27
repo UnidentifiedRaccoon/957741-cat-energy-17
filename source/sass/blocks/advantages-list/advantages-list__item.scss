@@ -109,13 +109,13 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 70px;
-    margin-right: auto;
+    margin-right: 80px;
 
     &:nth-child(odd) {
-      margin-right: auto;
+      margin-right: 80px;
     }
 
-    &:last-child {
+    &:nth-child(4n+4){
       margin-right: 0;
     }
 

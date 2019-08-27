@@ -30,7 +30,12 @@
 
     &--checkbox {
       width: (45%);
+      margin-right: (10%);
       margin-bottom: 32px;
+
+      &:nth-child(even) {
+        margin-right: 0;
+      }
 
       &:last-child {
         margin-bottom: 32px;
@@ -45,6 +50,15 @@
 
     &--checkbox {
       width: (20%);
+      margin-right: (5%);
+
+      &:nth-child(even) {
+        margin-right: (5%);
+      }
+
+      &:nth-child(4n+4) {
+        margin-right: 0;
+      }
     }
   }
 }
