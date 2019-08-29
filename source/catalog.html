@@ -16,31 +16,30 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-
   <header class="page-header">
     <div class="container  page-header__container">
       <div class="page-header__top-wrap">
-        <a class="page-header__logo-link" href="index-min.html">
+        <a class="page-header__logo-link" href="index.html">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип компании Кэт энерджи" width="191" height="39">
           </picture>
         </a>
-        <button class="page-header__toggle  page-header__toggle--closed" type="button">
+        <button class="page-header__toggle  page-header__toggle--closed  page-header__toggle--nojs" type="button">
           <span class="visually-hidden">Открывает или закрывает сайт-меню</span>
         </button>
       </div>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <ul class="site-nav  main-nav__site-nav">
           <li class="site-nav__item">
-            <a class="site-nav__link" href="index-min.html">Главная</a>
+            <a class="site-nav__link" href="index.html">Главная</a>
           </li>
           <li class="site-nav__item    site-nav__item--active">
             <a class="site-nav__link">Каталог продукции</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="form-min.html">Подбор программы</a>
+            <a class="site-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -327,7 +326,7 @@
     <!-- Блок дополнительных товаров -->
     <section class="additional-goods">
       <div class="subtitle">
-        <div class="container">
+        <div class="subtitle__container  container">
           <h2 class="subtitle__text  subtitle__text--catalog">Дополнительные товары</h2>
         </div>
       </div>
@@ -402,7 +401,7 @@
     </div>
 
     <div class="container  page-footer__container  page-footer__container--bottom">
-      <a class="page-footer__logo-link" href="index-min.html">
+      <a class="page-footer__logo-link" href="index.html">
         <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="Логотип компании Кэт энерджи" width="128" height="24">
       </a>
       <div class="social  page-footer__social">
@@ -417,7 +416,7 @@
           </li>
           <li class="social__item">
             <a class="social__link  social__link--insta" href="#" target="_blank" aria-label="Ссылка ведущая на страничку компании в инстаграмме">
-              <svg width="17" height="17" role="img">
+              <svg width="23" height="23" role="img">
                 <use xlink:href="#icon-s-insta"></use>
               </svg>
             </a>

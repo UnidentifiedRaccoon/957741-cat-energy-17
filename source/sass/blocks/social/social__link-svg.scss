@@ -1,0 +1,18 @@
+.social__link-svg {
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta {
+        width: 23px;
+        height: 23px;
+    }
+
+    &--fb {
+        width: 14px;
+        height: 28px;
+    }
+  }
+}

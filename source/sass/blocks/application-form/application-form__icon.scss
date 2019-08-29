@@ -2,4 +2,23 @@
   position: absolute;
   top: 13px;
   right: 15px;
+
+  &--tel {
+    top: 12px;
+    right: 13px;
+  }
+
+  &--mail {
+    top: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--tel {
+      top: 17px;
+    }
+
+    &--mail {
+      top: 16px;
+    }
+  }
 }

@@ -12,7 +12,7 @@
     height: 60px;
     background-color: $common-color-one;
     background-repeat: no-repeat;
-    background-position: 4px 6px;
+    background-position: 5px 5px;
     background-size: 50px auto;
   }
 
@@ -97,19 +97,20 @@
     &--nourishingly::after {
       content: "3";
       top: 0;
-      right: 0;
+      right: -2px;
     }
 
     &--effective::after {
       content: "4";
       top: 0;
-      right: 0;
+      right: -2px;
     }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 70px;
     margin-right: 80px;
+    padding-top: 111px;
 
     &:nth-child(odd) {
       margin-right: 80px;

@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 13px;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
   border-top: 1px solid $separating-line-color-dark;
 
   &:last-child {
@@ -11,7 +11,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 36px 25px 36px;
+    align-items: center;
+    padding: 23px 36px 26px 36px;
     border: 1px solid $separating-line-color-light;
   }
 

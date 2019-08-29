@@ -2,6 +2,15 @@
 @import "normalize.scss";
 // @import "outline.scss";
 @import "common.scss";
+// @import "mixin.scss";
+//
+//
+// @import "blocks/link-btn/link-btn.scss";
+// @import "blocks/styles-for-pages/index-page__page-title.scss";
+@import "blocks/styles-for-pages/catalog-page__page-title-container.scss";
+// @import "blocks/styles-for-pages/catalog-page__page-title.scss";
+@import "blocks/styles-for-pages/form-page__page-title-container.scss";
+// @import "blocks/styles-for-pages/form-page__page-title.scss";
 //
 @import "blocks/page-header/page-header.scss";
 @import "blocks/page-header/page-header__container.scss";
@@ -59,6 +68,7 @@
 @import "blocks/range/range.scss";
 @import "blocks/range/range__scale.scss";
 @import "blocks/range/range__bar.scss";
+@import "blocks/range/range__handle.scss";
 @import "blocks/range/range__button.scss";
 //
 @import "blocks/page-footer/page-footer.scss";
@@ -79,6 +89,7 @@
 @import "blocks/social/social__list.scss";
 @import "blocks/social/social__item.scss";
 @import "blocks/social/social__link.scss";
+@import "blocks/social/social__link-svg.scss";
 //
 @import "blocks/copyright/copyright__link.scss";
 @import "blocks/copyright/copyright__link-text.scss";
@@ -105,6 +116,10 @@
 @import "blocks/show-goods/show-goods__main-text.scss";
 @import "blocks/show-goods/show-goods__text.scss";
 @import "blocks/show-goods/show-goods__link-show-all.scss";
+//
+@import "blocks/subtitle/subtitle.scss";
+@import "blocks/subtitle/subtitle__container.scss";
+@import "blocks/subtitle/subtitle__text.scss";
 //
 @import "blocks/additional-goods/additional-goods.scss";
 @import "blocks/additional-goods/additional-goods__title.scss";
@@ -149,6 +164,3 @@
 @import "blocks/checkbox/checkbox__input.scss";
 //
 //
-@import "blocks/styles-for-pages/catalog-page__page-title-container.scss";
-@import "blocks/styles-for-pages/form-page__page-title-container.scss";
-@import "blocks/styles-for-pages/index-page.scss";

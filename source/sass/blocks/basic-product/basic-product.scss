@@ -8,15 +8,14 @@
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
     flex-direction: column;
-    padding: 0 38px 41px 38px;
+    padding: 0 38px 40px 38px;
     width: 325px;
-    min-height: 516px;
+    min-height: 515px;
     background-color: $common-color-two;
-    background-image: linear-gradient(to bottom, #ffffff 17%, $common-color-two 17%);
+    background-image: linear-gradient(to bottom, #ffffff 85px, $common-color-two 85px);
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    padding-bottom: 39px;
   }
 }

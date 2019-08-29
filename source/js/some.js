@@ -51,28 +51,30 @@ if (body.classList.contains("index-page")) {
   });
 }
 
-if (body.classList.contains("form-page")) {
-  var form = document.querySelector(".application-form");
-  var personTel = form.querySelector(".application-form__input--tel");
-  var personEmail = form.querySelector(".application-form__input--email");
 
-  form.addEventListener("submit", function(evt) {
-    if (!personTel.value) {
-      evt.preventDefault();
-      console.log("Нужно ввести tel");
-      personTel.classList.add("application-form__input--error");
-    } else {
-      personTel.classList.remove("application-form__input--error");
-    }
-    if (!personEmail.value) {
-      evt.preventDefault();
-      console.log("Нужно ввести email");
-      personEmail.classList.add("application-form__input--error");
-    } else {
-      personEmail.classList.remove("application-form__input--error");
-    }
-  });
-}
+// Скрипт для проверки валидности формы через JS
+// if (body.classList.contains("form-page")) {
+//   var form = document.querySelector(".application-form");
+//   var personTel = form.querySelector(".application-form__input--tel");
+//   var personEmail = form.querySelector(".application-form__input--email");
+//
+//   form.addEventListener("submit", function(evt) {
+//     if (!personTel.value) {
+//       evt.preventDefault();
+//       console.log("Нужно ввести tel");
+//       personTel.classList.add("application-form__input--error");
+//     } else {
+//       personTel.classList.remove("application-form__input--error");
+//     }
+//     if (!personEmail.value) {
+//       evt.preventDefault();
+//       console.log("Нужно ввести email");
+//       personEmail.classList.add("application-form__input--error");
+//     } else {
+//       personEmail.classList.remove("application-form__input--error");
+//     }
+//   });
+// }
 
 var map;
 var marker;

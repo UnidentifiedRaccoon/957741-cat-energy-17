@@ -1,0 +1,25 @@
+.subtitle {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 40px;
+    width: 100%;
+    height: 3px;
+    background-color: $common-color-one;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 87px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 65px;
+    }
+  }
+}

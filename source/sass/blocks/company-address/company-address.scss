@@ -1,4 +1,7 @@
 .company-address {
+  padding-top: 1px;
+  max-width: 139px;
+
   @media (min-width: $tablet-width) {
     max-width: 170px;
     text-align: right;

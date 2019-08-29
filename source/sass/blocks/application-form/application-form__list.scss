@@ -29,11 +29,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 28px;
     &--contacts {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
+      padding-bottom: 0px;
 
       & li {
         width: (46.5%);
@@ -42,6 +44,7 @@
 
     &--additional {
       justify-content: flex-start;
+      padding-bottom: 10px;
     }
   }
 }

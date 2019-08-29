@@ -1,0 +1,44 @@
+.link-btn {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  width: 100%;
+  font-family: $main-font, "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $common-color-one;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $common-color-one-dark;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--gray {
+    background-color: $common-color-two;
+
+    &:hover,
+    &:focus {
+      background-color: $common-color-two-dark;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

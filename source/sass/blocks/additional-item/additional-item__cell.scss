@@ -16,19 +16,26 @@
     font-size: 16px;
     line-height: 20px;
 
+    &--left {
+      max-width: $desktop-column-width;
+      text-align: right;
+    }
+
     &--right {
       width: 94px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    &--right {
-      width: 80px;
+    &--left {
+      min-width: $desktop-column-width;
+      max-width: $desktop-column-width;
       text-align: left;
     }
 
-    &--left {
-      width: $desktop-column-width;
+    &--right {
+      min-width: 40px;
+      max-width: 60px;
       text-align: left;
     }
   }

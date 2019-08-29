@@ -1,7 +1,7 @@
 .diet-list__item {
   position: relative;
   margin-bottom: 20px;
-  padding: 29px 20px 0 20px;
+  padding: 30px 20px 0 20px;
   background-color: $common-color-two;
 
   &::before {
@@ -18,8 +18,8 @@
   &--loos::after {
     content: "";
     position: absolute;
-    top: 25px;
-    left: 31px;
+    top: 23px;
+    left: 30px;
     width: 35px;
     height: 50px;
     background-image: url("../img/icon-cat-slim.svg");
@@ -31,7 +31,7 @@
     content: "";
     position: absolute;
     top: 35px;
-    left: 14px;
+    left: 13px;
     width: 67px;
     height: 28px;
     background-image: url("../img/icon-cat-pro.svg");
@@ -44,7 +44,7 @@
     padding: 74px 0 41px 53px;
 
     &::before {
-      top: 92px;
+      top: 90px;
       left: 446px;
       width: 200px;
       height: 200px;
@@ -54,7 +54,7 @@
       padding-right: 275px;
 
       &::after {
-        top: 80px;
+        top: 78px;
         left: 475px;
         width: 141px;
         height: 194px;
@@ -65,7 +65,7 @@
       padding-right: 315px;
 
       &::after {
-        top: 135px;
+        top: 133px;
         left: 412px;
         width: 268px;
         height: 113px;
@@ -76,7 +76,7 @@
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
     width: 570px;
-    padding-right: 0;
+    padding-top: 76px;
 
     &::before {
       top: 47px;

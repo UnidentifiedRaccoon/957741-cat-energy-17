@@ -38,7 +38,7 @@
     }
   }
 
-  &--error {
+  &:invalid {
     border-color: $error-color;
     outline: 1px solid $error-color;
 
@@ -48,6 +48,10 @@
 
     &:focus {
       outline: 2px solid $error-color;
+    }
+
+    & ~ .application-form__icon {
+      color: $error-color;
     }
   }
 

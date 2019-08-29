@@ -1,10 +1,14 @@
 .intro-presentation__title {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
     width: 500px;
     color: $text-color-dark;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px
   }
 }

@@ -1,8 +1,8 @@
 .application-form__message {
   box-sizing: border-box;
-  margin-top: 23px;
+  margin-top: 22px;
   padding-top: 12px;
-  padding-left: 14px;
+  padding-left: 15px;
   max-width: 100%;
   min-width: 100%;
   height: 150px;
@@ -13,6 +13,15 @@
   color: $text-color-light;
   border: solid 1px $separating-line-color-light;
 
+  &:hover {
+    border-color: $separating-line-color-dark;
+  }
+
+  &:focus {
+    border-color: $text-color-light;
+    outline: 2px solid $text-color-light;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
     padding-top: 10px;
@@ -20,9 +29,5 @@
     min-height: 175px;
     font-size: 20px;
     line-height: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 20px;
   }
 }

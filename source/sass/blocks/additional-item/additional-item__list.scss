@@ -5,11 +5,11 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    margin-top: 3px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 14px;
+    flex-grow: 1;
     margin-bottom: 0;
   }
 }

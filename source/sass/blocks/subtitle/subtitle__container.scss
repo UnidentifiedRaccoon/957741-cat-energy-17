@@ -1,0 +1,12 @@
+.subtitle__container {
+  display: flex;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-edge-space;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 2px;
+  }
+}

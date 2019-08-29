@@ -45,15 +45,21 @@
 
   @media (min-width: $desktop-width) {
     &--text {
-      margin-bottom: 19px;
+      margin-bottom: 20px;
     }
 
     &--checkbox {
-      width: (20%);
-      margin-right: (5%);
+      margin-right: 40px;
+      margin-left: 40px;
+      width: 245px;
 
       &:nth-child(even) {
-        margin-right: (5%);
+        margin-right: 40px;
+        margin-left: 40px;
+      }
+
+      &:nth-child(4n+1) {
+        margin-left: 0;
       }
 
       &:nth-child(4n+4) {

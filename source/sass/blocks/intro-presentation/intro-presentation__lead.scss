@@ -17,14 +17,19 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-left: -10px;
+    width: 300px;
     font-size: 20px;
     line-height: 20px;
-    width: 300px;
     color: $text-color-dark;
 
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       /* стили только для IE10 и IE11 */
       margin-bottom: 30px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -8px;
   }
 }

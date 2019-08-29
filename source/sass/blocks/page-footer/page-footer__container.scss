@@ -2,14 +2,14 @@
   &--top {
     display: flex;
     justify-content: space-between;
-    padding-top: 27px;
+    padding-top: 26px;
     padding-bottom: 25px;
   }
 
   @media (min-width: $tablet-width) {
     &--top {
-      padding: 0 70px;
-      padding-top: 65px;
+      padding: 0 71px;
+      padding-top: 63px;
       padding-bottom: 55px;
     }
 
@@ -23,7 +23,7 @@
   @media (min-width: $desktop-width) {
     &--top {
       position: absolute;
-      top: 100px;
+      top: 98px;
       left: calc(50% - 610px);
       padding: 60px 75px;
       max-width: 570px;
