@@ -42,12 +42,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-right: 6px;
     &--before {
       margin-right: 17px;
     }
 
     &--after {
-      margin-left: 17px;
+      margin-left: 15px;
     }
   }
 }
