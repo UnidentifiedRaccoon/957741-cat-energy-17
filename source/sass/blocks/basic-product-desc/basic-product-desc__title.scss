@@ -16,9 +16,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-bottom: 13px;
+    margin-bottom: 14px;
     width: auto;
     max-width: 150px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
   }
 }

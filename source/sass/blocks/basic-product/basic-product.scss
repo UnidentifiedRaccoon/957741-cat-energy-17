@@ -10,12 +10,13 @@
     flex-direction: column;
     padding: 0 38px 40px 38px;
     width: 325px;
-    min-height: 515px;
+    min-height: 516px;
     background-color: $common-color-two;
     background-image: linear-gradient(to bottom, #ffffff 85px, $common-color-two 85px);
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    min-height: 515px;
   }
 }
