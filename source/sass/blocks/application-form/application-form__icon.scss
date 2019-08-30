@@ -21,4 +21,15 @@
       top: 16px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--tel {
+      right: 19px;
+      top: 17px;
+    }
+
+    &--mail {
+      right: 20px;
+    }
+  }
 }
