@@ -6,11 +6,11 @@
 //
 //
 @import "blocks/link-btn/link-btn.scss";
-@import "blocks/styles-for-pages/index-page__page-title.scss";
-@import "blocks/styles-for-pages/catalog-page__page-title-container.scss";
-@import "blocks/styles-for-pages/catalog-page__page-title.scss";
-@import "blocks/styles-for-pages/form-page__page-title-container.scss";
-@import "blocks/styles-for-pages/form-page__page-title.scss";
+@import "blocks/index-page/index-page__page-title.scss";
+@import "blocks/catalog-page/catalog-page__page-title-container.scss";
+@import "blocks/catalog-page/catalog-page__page-title.scss";
+@import "blocks/form-page/form-page__page-title-container.scss";
+@import "blocks/form-page/form-page__page-title.scss";
 //
 @import "blocks/page-header/page-header.scss";
 @import "blocks/page-header/page-header__container.scss";
@@ -163,5 +163,3 @@
 //
 @import "blocks/checkbox/checkbox__label.scss";
 @import "blocks/checkbox/checkbox__input.scss";
-//
-//
