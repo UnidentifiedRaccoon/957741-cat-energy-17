@@ -1,4 +1,5 @@
 .life-example__text {
+  @include text-basis;
   margin-right: 5px;
   margin-bottom: 25px;
 
