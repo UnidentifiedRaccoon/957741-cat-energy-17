@@ -1,4 +1,5 @@
 .advantages__title {
+  @include title-basis;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {

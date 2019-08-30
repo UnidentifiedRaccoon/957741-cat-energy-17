@@ -1,9 +1,10 @@
 .intro-presentation__title {
+  @include title-basis;
   margin-bottom: 25px;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     width: 500px;
     color: $text-color-dark;
   }

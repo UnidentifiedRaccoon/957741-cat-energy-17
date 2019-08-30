@@ -1,14 +1,14 @@
 .stats-list__item {
-  position: relative;
   padding-top: 13px;
-  padding-bottom: 17px;
+  padding-bottom: 18px;
   width: (43.5%);
   border: 1px solid $separating-line-color-dark;
   border-radius: 2px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 15px;
-    padding-bottom: 19px;
+    padding-top: 14px;
+    padding-bottom: 30px;
     width: 162px;
     margin-right: 40px;
     border-radius: 5px;

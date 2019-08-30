@@ -1,0 +1,12 @@
+.stats-list__item-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: (85%);
+  margin-bottom: -35px;
+  background-color: $common-color-two;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    // width: auto;
+  }
+}

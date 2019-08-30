@@ -1,6 +1,6 @@
 .stats-list__value {
   display: block;
-  margin: auto;
+  margin-bottom: 9px;
   font-family: $main-font, "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    margin-bottom: 11px;
     line-height: 37px;
   }
 }

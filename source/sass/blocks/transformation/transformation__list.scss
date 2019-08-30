@@ -2,13 +2,13 @@
   position: relative;
   min-height: 260px;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     min-height: 520px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {

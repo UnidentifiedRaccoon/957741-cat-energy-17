@@ -7,7 +7,7 @@
     url("../img/intro-background-mobile@1x.jpg"),
     linear-gradient(to bottom, $common-color-one 60%, #ffffff 60%);
   background-repeat: no-repeat, no-repeat;
-  background-position: center 167px, center 0, 0 0;
+  background-position: center 166px, center 0, 0 0;
   background-size: 280px auto, 320px auto, auto;
 
   @media (min-resolution: $retina-dpi),
@@ -19,13 +19,13 @@
 
 
   @media (min-width: $tablet-width) {
-    padding-left: 119px;
+    padding-left: 118px;
     padding-top: 30px;
     min-height: 835px;
     align-items: flex-start;
     background-image: url("../img/intro-pack-image-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center 233px;
+    background-position: center 231px;
     background-size: 708px auto;
 
     @media (min-resolution: $retina-dpi),

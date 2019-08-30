@@ -2,15 +2,15 @@
 @import "normalize.scss";
 // @import "outline.scss";
 @import "common.scss";
-// @import "mixin.scss";
+@import "mixin.scss";
 //
 //
-// @import "blocks/link-btn/link-btn.scss";
-// @import "blocks/styles-for-pages/index-page__page-title.scss";
+@import "blocks/link-btn/link-btn.scss";
+@import "blocks/styles-for-pages/index-page__page-title.scss";
 @import "blocks/styles-for-pages/catalog-page__page-title-container.scss";
-// @import "blocks/styles-for-pages/catalog-page__page-title.scss";
+@import "blocks/styles-for-pages/catalog-page__page-title.scss";
 @import "blocks/styles-for-pages/form-page__page-title-container.scss";
-// @import "blocks/styles-for-pages/form-page__page-title.scss";
+@import "blocks/styles-for-pages/form-page__page-title.scss";
 //
 @import "blocks/page-header/page-header.scss";
 @import "blocks/page-header/page-header__container.scss";
@@ -55,6 +55,7 @@
 //
 @import "blocks/stats-list/stats-list.scss";
 @import "blocks/stats-list/stats-list__item.scss";
+@import "blocks/stats-list/stats-list__item-box.scss";
 @import "blocks/stats-list/stats-list__value.scss";
 @import "blocks/stats-list/stats-list__tip.scss";
 //

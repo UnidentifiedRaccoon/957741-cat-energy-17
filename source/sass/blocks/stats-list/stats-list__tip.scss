@@ -1,22 +1,15 @@
 .stats-list__tip {
-  box-sizing: border-box;
-  position: absolute;
-  top: (85%);
-  left: (14.5%);
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: (70.5%);
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: (70%);
   font-size: 12px;
   line-height: 12px;
   color: $text-color-light;
   text-align: center;
-  background-color: $common-color-two;
 
   @media (min-width: $tablet-width) {
-    top: (89%);
-    left: (5%);
-    max-width: (90%);
-    padding: 0 9px;
+    width: (95%);
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;

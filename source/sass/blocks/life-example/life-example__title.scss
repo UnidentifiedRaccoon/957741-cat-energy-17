@@ -1,8 +1,9 @@
 .life-example__title {
+  @include title-basis;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
