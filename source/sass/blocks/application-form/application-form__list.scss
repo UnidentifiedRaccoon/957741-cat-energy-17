@@ -30,12 +30,13 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 28px;
+
     &--contacts {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
-      padding-bottom: 0px;
+      padding-bottom: 0;
 
       & li {
         width: (46.8%);
