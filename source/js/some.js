@@ -79,17 +79,34 @@ if (body.classList.contains("index-page")) {
 var map;
 var marker;
 var infoWindow;
-var centerCoordinates;
-if (window.matchMedia("(min-width: 1300px)").matches) {
-  centerCoordinates = {lat: 59.938846, lng: 30.319333};
-} else {
-  centerCoordinates = {lat: 59.938743, lng: 30.323037};
-}
-var positionCoordinates = {lat: 59.938743, lng: 30.323037};
-var zoom = 17;
-var image = "../img/map-pin.png";
-var popupContent = "<p class='company-address__text'>ул. Большая Конюшенная, д. 19/8 <span class='company-address__town'>Санкт-Петербург</span></p>"
   function initMap() {
+    var popupContent = "<p class='company-address__text'>ул. Большая Конюшенная, д. 19/8 <span class='company-address__town'>Санкт-Петербург</span></p>";
+    var centerCoordinates;
+    if (window.matchMedia("(min-width: 1300px)").matches) {
+      centerCoordinates = {lat: 59.938846, lng: 30.319333};
+    } else {
+      centerCoordinates = {lat: 59.938743, lng: 30.323037};
+    };
+    var positionCoordinates = {lat: 59.938743, lng: 30.323037};
+    var zoom = 17;
+    var icon;
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      icon = {
+        url: "../img/map-pin.png",
+        size: new google.maps.Size(113, 106),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(55, 106),
+        scaledSize: new google.maps.Size(113, 106)
+      };
+    } else {
+      icon = {
+        url: "../img/map-pin.png",
+        size: new google.maps.Size(113, 106),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(27, 53),
+        scaledSize: new google.maps.Size(55, 53)
+      };
+    };
   map = new google.maps.Map(document.getElementById('map'), {
     center: centerCoordinates,
     zoom: zoom
@@ -97,7 +114,7 @@ var popupContent = "<p class='company-address__text'>ул. Большая Кон
   marker = new google.maps.Marker({
       position: positionCoordinates,
       map: map,
-      icon: image
+      icon: icon
   }),
   infoWindow = new google.maps.InfoWindow({
     content: popupContent
