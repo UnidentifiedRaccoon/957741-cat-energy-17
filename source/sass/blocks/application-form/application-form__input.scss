@@ -62,4 +62,16 @@
       padding-left: 18px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 17px;
+
+    &--tel {
+      padding-left: 20px;
+    }
+
+    &--email {
+      padding-left: 22px;
+    }
+  }
 }
