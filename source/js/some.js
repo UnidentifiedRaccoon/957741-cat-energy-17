@@ -81,14 +81,22 @@ var marker;
 var infoWindow;
   function initMap() {
     var popupContent = "<p class='company-address__text'>ул. Большая Конюшенная, д. 19/8 <span class='company-address__town'>Санкт-Петербург</span></p>";
+    var pinCoordinates;
     var centerCoordinates;
+    var zoom;
     if (window.matchMedia("(min-width: 1300px)").matches) {
-      centerCoordinates = {lat: 59.938846, lng: 30.319333};
+      zoom = 16.95;
+      centerCoordinates = {lat: 59.939115, lng: 30.31940};
+      pinCoordinates = {lat: 59.938793, lng: 30.323157};
+    } else if (window.matchMedia("(min-width: 768px)").matches){
+      zoom = 17.5;
+      centerCoordinates = {lat: 59.938983, lng: 30.323107};
+      pinCoordinates = {lat: 59.938773, lng: 30.323087};
     } else {
-      centerCoordinates = {lat: 59.938743, lng: 30.323037};
-    };
-    var positionCoordinates = {lat: 59.938743, lng: 30.323037};
-    var zoom = 17;
+      zoom = 16.65;
+      centerCoordinates = {lat: 59.938875, lng: 30.323207};
+      pinCoordinates = {lat: 59.938783, lng: 30.323187};
+    }
     var icon;
     if (window.matchMedia("(min-width: 768px)").matches) {
       icon = {
@@ -96,7 +104,7 @@ var infoWindow;
         size: new google.maps.Size(113, 106),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(55, 106),
-        scaledSize: new google.maps.Size(113, 106)
+        scaledSize: new google.maps.Size(115, 106)
       };
     } else {
       icon = {
@@ -104,7 +112,7 @@ var infoWindow;
         size: new google.maps.Size(113, 106),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(27, 53),
-        scaledSize: new google.maps.Size(55, 53)
+        scaledSize: new google.maps.Size(57, 53)
       };
     };
   map = new google.maps.Map(document.getElementById('map'), {
@@ -112,7 +120,7 @@ var infoWindow;
     zoom: zoom
   }),
   marker = new google.maps.Marker({
-      position: positionCoordinates,
+      position: pinCoordinates,
       map: map,
       icon: icon
   }),
